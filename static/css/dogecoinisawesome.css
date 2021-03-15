@@ -1,0 +1,50 @@
+body, html {
+    /* bg */
+    background: rgb(255, 200, 0) url("/static/img/bg.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* font */
+    font-family: 'Comic Neue', cursive;
+    text-align: center;
+    /* sizing */
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+#center {
+    /* color */
+    color: #FA5B3D;
+    /* alignment */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* sizing */
+    height: 100%;
+    width: 100%;
+}
+
+#price {
+    /* bg */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border */
+    border: 0.05em solid #FA5B3D;
+    /* spacing */
+    padding: 1em;
+    margin: .5em;
+}
+
+#tips {
+    /* bg */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border */
+    border: 0.05em solid #FA5B3D;
+    /* spacing */
+    padding: 1em;
+}
