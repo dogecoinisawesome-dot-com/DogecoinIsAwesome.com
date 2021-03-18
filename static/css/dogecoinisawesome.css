@@ -1,0 +1,119 @@
+:root {
+    --backgroundColor: #f1c40f;
+    --backgroundImage: url("/static/img/bg.jpeg");
+    --font: 'Comic Neue', cursive;
+    --codeFont: 'Roboto Mono', monospace;
+    --codeText: #222;
+    --linkText: #f1c40f;
+    --titleText: #373c3f;
+}
+
+body, html {
+    /* bg */
+    background: var(--backgroundColor) var(--backgroundImage) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* font */
+    font-family: var(--font);
+    text-align: center;
+    /* sizing */
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    /* color */
+    color: var(--linkText);
+}
+
+code {
+    /* color */
+    color: var(--codeText);
+    /* font */
+    font-family: var(--codeFont);
+}
+
+h1 {
+    /* color */
+    color: var(--titleText);
+    /* spacing */
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    /* sizing */
+    max-width: 100%;
+}
+
+pre {
+    /* bg */
+    background-color: hsla(0, 0%, 93.3%, .8);
+    /* color */
+    color: var(--codeText);
+    /* font */
+    font-family: var(--codeFont);
+    /* properties */
+    display: inline-block;
+    overflow: auto;
+    /* sizing */
+    width: calc(100% - 1em);
+    /* spacing */
+    margin: 4px 0;
+    padding: 8px;
+}
+
+#center {
+    /* color */
+    color: #FA5B3D;
+    /* alignment */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* sizing */
+    height: 100%;
+    width: 100%;
+}
+
+#center-content {
+    /* alignment */
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    /* bg */
+    background-color: #fff;
+    /* color */
+    color: #1c1c1c;
+    /* border */
+    border-radius: 5px;
+    /* font */
+    text-align: left;
+    /* spacing */
+    padding: 1em;
+    margin: .5em;
+    /* sizing */
+    width: 700px;
+}
+
+#price {
+    /* bg */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border */
+    border: 0.05em solid #FA5B3D;
+    /* spacing */
+    padding: 1em;
+    margin: .5em;
+}
+
+#tips {
+    /* bg */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border */
+    border: 0.05em solid #FA5B3D;
+    /* spacing */
+    padding: 1em;
+}
