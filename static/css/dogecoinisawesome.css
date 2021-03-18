@@ -77,7 +77,7 @@ pre {
     width: 100%;
 }
 
-#content {
+.content {
     /* bg */
     background-color: #fff;
     /* color */
