@@ -1,4 +1,4 @@
-# Running A Full Node
+# Running A Dogecoin Full Node
 
 Support the Dogecoin network by running your own full node.
 
@@ -36,8 +36,8 @@ Support the Dogecoin network by running your own full node.
         * [Reduce maximum connections](#reduce-maximum-connections)
         * [Blocks-only mode](#blocks-only-mode)
 * [Report An Issue](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com/issues/new)
-* [Edit On Github](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com)
-* Donate to [DogecoinIsAwesome.com](#https://www.dogecoinisawesome.com/): DDNhF6qpFPHM1KxLUWJp3WPa57QCX1Jt2F
+* [Edit On Github](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com/blob/main/static/docs/full-node.md)
+* Donate to [DogecoinIsAwesome.com](https://www.dogecoinisawesome.com/): DDNhF6qpFPHM1KxLUWJp3WPa57QCX1Jt2F
 
 <div id="what-isa-full-node"></div>
 
@@ -859,10 +859,10 @@ Dogecoin Core like this:
 
 ```bash
 ### Dogecoin Core daemon
-Dogecoind -par=1 -daemon
+dogecoind -par=1 -daemon
 
 ### Dogecoin Core GUI
-Dogecoin-qt -par=1
+dogecoin-qt -par=1
 ```
 
 Once you've decided you like an option, you can add it to the Dogecoin
