@@ -1,4 +1,4 @@
-# Running A Full Node
+# Running A Dogecoin Full Node
 
 Support the Dogecoin network by running your own full node.
 
