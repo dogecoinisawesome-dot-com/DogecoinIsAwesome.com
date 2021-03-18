@@ -36,8 +36,8 @@ Support the Dogecoin network by running your own full node.
         * [Reduce maximum connections](#reduce-maximum-connections)
         * [Blocks-only mode](#blocks-only-mode)
 * [Report An Issue](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com/issues/new)
-* [Edit On Github](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com)
-* Donate to [DogecoinIsAwesome.com](#https://www.dogecoinisawesome.com/): DDNhF6qpFPHM1KxLUWJp3WPa57QCX1Jt2F
+* [Edit On Github](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com/blob/2b60387cbe93de3da5e6e2605b89fe440d60878b/static/docs/full-node.md)
+* Donate to [DogecoinIsAwesome.com](https://www.dogecoinisawesome.com/): DDNhF6qpFPHM1KxLUWJp3WPa57QCX1Jt2F
 
 <div id="what-isa-full-node"></div>
 
