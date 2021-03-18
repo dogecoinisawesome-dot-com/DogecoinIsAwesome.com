@@ -859,10 +859,10 @@ Dogecoin Core like this:
 
 ```bash
 ### Dogecoin Core daemon
-Dogecoind -par=1 -daemon
+dogecoind -par=1 -daemon
 
 ### Dogecoin Core GUI
-Dogecoin-qt -par=1
+dogecoin-qt -par=1
 ```
 
 Once you've decided you like an option, you can add it to the Dogecoin
