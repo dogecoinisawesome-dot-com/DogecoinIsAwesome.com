@@ -31,7 +31,7 @@ paste the following lines into the file:
     FLASK_APP=dogecoinisawesome.py
     FLASK_ENV=development
 
-#### Preview The Site
+**Preview The Site**
 
 To preview the website in your local browser, run the following command:
 
