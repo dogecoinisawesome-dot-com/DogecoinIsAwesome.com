@@ -1,6 +1,6 @@
 :root {
     --backgroundColor: #f1c40f;
-    --backgroundImage: url("/static/img/bg.jpeg");
+    --backgroundImage: url("./bg.jpeg");
     --font: 'Comic Neue', cursive;
     --codeFont: 'Roboto Mono', monospace;
     --codeText: #222;
