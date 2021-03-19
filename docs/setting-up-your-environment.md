@@ -22,7 +22,6 @@ And install the necessary dependencies using `pip`:
 
     py -m pip install -r requirements.txt
 
-
 **Setup Config Vars**
 
 Create a `.env` file in the the top-level of your local repository and then copy and
@@ -51,4 +50,3 @@ message like this:
 ```
 
 Visit the indicated URL in your browser to view the site.
-
