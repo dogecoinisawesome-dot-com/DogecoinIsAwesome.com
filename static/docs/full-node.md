@@ -2,7 +2,7 @@
 
 Support the Dogecoin network by running your own full node.
 
-* [What Is A Full Node?](#what-isa-full-node)
+* [What Is A Full Node?](#what-is-a-full-node)
 * [Costs And Warnings](#costs-and-warnings)
     * [Special Cases](#special-cases)
     * [Secure Your Wallet](#secure-your-wallet)
@@ -37,7 +37,6 @@ Support the Dogecoin network by running your own full node.
         * [Blocks-only mode](#blocks-only-mode)
 * [Report An Issue](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com/issues/new)
 * [Edit On Github](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com/blob/main/static/docs/full-node.md)
-* Donate to [DogecoinIsAwesome.com](https://www.dogecoinisawesome.com/): DDNhF6qpFPHM1KxLUWJp3WPa57QCX1Jt2F
 
 <div id="what-isa-full-node"></div>
 
