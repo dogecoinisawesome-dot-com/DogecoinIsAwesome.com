@@ -1,32 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Error</title>
-    <meta charset="UTF-8">
-    <meta name="author" content="Jacek Trociński">
-    <meta name="description" content="Application error.">
-    <meta name="keywords" content="dogecoin, doge, how to, guide">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" type="image/png" href="/static/img/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/static/img/favicon-32x32.png" sizes="32x32">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap">
-    <link rel="stylesheet" href="/static/css/normalize.css">
-    <link rel="stylesheet" href="/static/css/dogecoinisawesome.css">
-</head>
+{% include "head.html" %}
 
 <body>
-    <div class="center-content">
-        <div>
-            <div class="content">
-                <h1>Application error</h1>
-                <p>An error occurred in the application and your page could not be served.</p>
-            </div>
-        </div>
-    </div>
+    <main>
+        <nav>
+            <h2><a href="/">Home</a></h2>
+        </nav>
+
+        <article>
+            <h1>Application error</h1>
+            <p>An error occurred in the application and your page could not be served.</p>
+        </article>
+
+        {% include "footer.html" %}
+    </main>
 </body>
 
 </html>
