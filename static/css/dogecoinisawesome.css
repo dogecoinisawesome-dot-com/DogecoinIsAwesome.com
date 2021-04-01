@@ -1,11 +1,3 @@
-:root {
-    --codeFont: "Roboto Mono", monospace;
-    --codeText: #222;
-    --content-border-color: #fa5b3d;
-    --linkText: #997c07;
-    --titleText: #373c3f;
-}
-
 body,
 html {
     background: #f1c40f url("/static/img/bg.jpeg") no-repeat center center fixed;
