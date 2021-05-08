@@ -336,6 +336,7 @@ p {
   padding-top: 24px;
   padding-bottom: 16px;
   background-color: #f5d43c;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.16);
 }
 
 .nav-menu-2 {
