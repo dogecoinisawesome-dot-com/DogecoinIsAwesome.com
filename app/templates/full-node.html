@@ -1,18 +1,12 @@
-{% include "head.html" %}
+{% extends "base.html" %}
 
-<body>
-    <main>
-        <nav>
-            <h2><a href="/">Home</a></h2>
-        </nav>
-
-        <article>
+{% block content %}
+<main id="main-content" class="main-content">
+    <div class="w-container">
+        <div class="w-richtext">
             {{ markdown_html |safe }}
-        </article>
+        </div>
+    </div>
+</main>
 
-        {% include "footer.html" %}
-    </main>
-
-</body>
-
-</html>
+{% endblock %}

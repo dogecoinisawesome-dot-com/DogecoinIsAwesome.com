@@ -5,9 +5,10 @@ from app import app
 
 
 @app.route("/")
+@app.route("/index")
 def homepage():
     try:
-        return render_template("index.html")
+        return render_template("index.html", title="Home")
     except IndexError:
         abort(404)
 
@@ -19,12 +20,15 @@ def full_node():
         md_template_string = markdown.markdown(
             readme_file.read(), extensions=["markdown.extensions.fenced_code"]
         )
-        return render_template("full-node.html", markdown_html=md_template_string)
+        return render_template(
+            "full-node.html",
+            title="Running a Full Node",
+            markdown_html=md_template_string,
+        )
     except IndexError:
         abort(404)
 
 
 @app.errorhandler(404)
 def page_not_found(e):
-    # note that we set the 404 status explicitly
-    return render_template("application-error.html"), 404
+    return render_template("404.html"), 404
