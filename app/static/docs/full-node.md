@@ -2,43 +2,43 @@
 
 Support the Dogecoin network by running your own full node.
 
-* [What Is A Full Node?](#what-is-a-full-node)
-* [Costs And Warnings](#costs-and-warnings)
-    * [Special Cases](#special-cases)
-    * [Secure Your Wallet](#secure-your-wallet)
-    * [Minimum Requirements](#minimum-requirements)
-    * [Possible Problems](#possible-problems)
-* [Initial Block Download (IBD)](#initial-block-download-ibd)
-* [Linux Instructions](#linux-instructions)
-    * [Dogecoin Core GUI](#dogecoin-core-gui)
-    * [Dogecoin Core Daemon](#dogecoin-core-daemon)
-* [Windows Instructions](#windows-instructions)
-    * [Windows 10 ](#windows-10)
-        * [Dogecoin Core GUI](#windows-10-dogecoin-core-gui)
-        * [Dogecoin Core Daemon](#windows-10-dogecoin-core-daemon)
-* [Mac OS X Instructions](#mac-os-x-instructions)
-    * [Mac OS X Yosemite 10.10.x+](#mac-os-x-yosemite-10.10.x+)
-        * [Dogecoin Core GUI](#mac-os-x-dogecoin-core-gui)
-* [Upgrading Dogecoin Core](#upgrading-dogecoin-core)
-* [Network Configuration](#network-configuration)
-    * [Testing Connections](#testing-connections)
-        * [GUI Peer Info](#gui-peer-info)
-        * [Daemon Peer Info](#daemon-peer-info)
-    * [Enabling Connections](#enabling-connections)
-        * [Configuring DHCP](#configuring-dhcp)
-        * [Port Forwarding](#port-forwarding)
-        * [Firewall Configuration](#firewall-configuration)
-* [Configuration Tuning](#configuration-tuning)
-    * [Reduce Storage](#reduce-storage)
-    * [Reduce Traffic](#reduce-traffic)
-        * [Maximum Upload Targets](#maximum-upload-targets)
-        * [Disable listening](#disable-listening)
-        * [Reduce maximum connections](#reduce-maximum-connections)
-        * [Blocks-only mode](#blocks-only-mode)
-* [Report An Issue](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com/issues/new)
-* [Edit On Github](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com/blob/main/static/docs/full-node.md)
+- [What Is A Full Node?](#what-is-a-full-node)
+- [Costs And Warnings](#costs-and-warnings)
+    - [Special Cases](#special-cases)
+    - [Secure Your Wallet](#secure-your-wallet)
+    - [Minimum Requirements](#minimum-requirements)
+    - [Possible Problems](#possible-problems)
+- [Initial Block Download (IBD)](#initial-block-download-ibd)
+- [Linux Instructions](#linux-instructions)
+    - [Dogecoin Core GUI](#dogecoin-core-gui)
+    - [Dogecoin Core Daemon](#dogecoin-core-daemon)
+- [Windows Instructions](#windows-instructions)
+    - [Windows 10 ](#windows-10)
+        - [Dogecoin Core GUI](#windows-10-dogecoin-core-gui)
+        - [Dogecoin Core Daemon](#windows-10-dogecoin-core-daemon)
+- [Mac OS X Instructions](#mac-os-x-instructions)
+    - [Mac OS X Yosemite 10.10.x+](#mac-os-x-yosemite-10.10.x+)
+        - [Dogecoin Core GUI](#mac-os-x-dogecoin-core-gui)
+- [Upgrading Dogecoin Core](#upgrading-dogecoin-core)
+- [Network Configuration](#network-configuration)
+    - [Testing Connections](#testing-connections)
+        - [GUI Peer Info](#gui-peer-info)
+        - [Daemon Peer Info](#daemon-peer-info)
+    - [Enabling Connections](#enabling-connections)
+        - [Configuring DHCP](#configuring-dhcp)
+            - [Port Forwarding](#port-forwarding)
+        - [Firewall Configuration](#firewall-configuration)
+- [Configuration Tuning](#configuration-tuning)
+    - [Reduce Storage](#reduce-storage)
+    - [Reduce Traffic](#reduce-traffic)
+        - [Maximum Upload Targets](#maximum-upload-targets)
+        - [Disable listening](#disable-listening)
+        - [Reduce maximum connections](#reduce-maximum-connections)
+        - [Blocks-only mode](#blocks-only-mode)
+- [Report An Issue](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com/issues/new)
+- [Edit On Github](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com/blob/main/static/docs/full-node.md)
 
-<div id="what-isa-full-node"></div>
+<div id="what-is-a-full-node"></div>
 
 ## What Is A Full Node?
 
@@ -55,7 +55,7 @@ centralized services instead.
 
 Many people and organizations volunteer to run full nodes using spare computing
 and bandwidth resources---but more volunteers are needed to allow Dogecoin to
-continue to grow.  This document describes how you can help and what helping
+continue to grow. This document describes how you can help and what helping
 will cost you.
 
 <div id="costs-and-warnings"></div>
@@ -82,7 +82,7 @@ general.
 
 It's possible and safe to run a full node to support the network and use its
 wallet to store your Dogecoins, but you must take the same precautions you would
-when using any Dogecoin wallet.  Please see the [dogecoin core guide](https://www.reddit.com/r/dogecoin/wiki/dogecoincoreguide#wiki_safety_first.21_encrypting_your_wallet) for more information.
+when using any Dogecoin wallet. Please see the [dogecoin core guide](https://www.reddit.com/r/dogecoin/wiki/dogecoincoreguide#wiki_safety_first.21_encrypting_your_wallet) for more information.
 
 <div id="minimum-requirements"></div>
 
@@ -93,50 +93,50 @@ weak hardware, it may work---but you'll likely spend more time dealing with
 issues. If you can meet the following requirements, you'll have an easy-to-use
 node.
 
-* Desktop or laptop hardware running recent versions of Windows, Mac OS X, or
+- Desktop or laptop hardware running recent versions of Windows, Mac OS X, or
   Linux.
 
-* 50 gigabytes of free disk space, accessible at a minimum read/write speed of
+- 50 gigabytes of free disk space, accessible at a minimum read/write speed of
   100 MB/s.
 
-* 2 gigabytes of memory (RAM)
+- 2 gigabytes of memory (RAM)
 
-* A broadband Internet connection with upload speeds of at least 400 kilobits
+- A broadband Internet connection with upload speeds of at least 400 kilobits
   (50 kilobytes) per second
 
-* An unmetered connection, a connection with high upload limits, or a connection
+- An unmetered connection, a connection with high upload limits, or a connection
   you regularly monitor to ensure it doesn't exceed its upload limits.
 
-* 6 hours a day that your full node can be left running. (You can do other
+- 6 hours a day that your full node can be left running. (You can do other
   things with your computer while running a full node.) More hours would be
   better, and best of all would be if you can run your node continuously.
 
-    **Note:** many operating systems today (Windows, Mac, and Linux) enter a
-    low-power mode after the screensaver activates, slowing or halting network
-    traffic. This is often the default setting on laptops and on all Mac OS X
-    laptops and desktops. Check your screensaver settings and disable automatic
-    "sleep" or "suspend" options to ensure you support the network whenever your
-    computer is running.
+  **Note:** many operating systems today (Windows, Mac, and Linux) enter a
+  low-power mode after the screensaver activates, slowing or halting network
+  traffic. This is often the default setting on laptops and on all Mac OS X
+  laptops and desktops. Check your screensaver settings and disable automatic
+  "sleep" or "suspend" options to ensure you support the network whenever your
+  computer is running.
 
 <div id="possible-problems"></div>
 
 ### Possible Problems
 
-* Legal: Dogecoin use is prohibited or restricted in some areas.
+- Legal: Dogecoin use is prohibited or restricted in some areas.
 
-* Bandwidth limits: Some Internet plans will charge an additional amount for any
+- Bandwidth limits: Some Internet plans will charge an additional amount for any
   excess upload bandwidth used that isn't included in the plan. Worse, some
   providers may terminate your connection without warning because of overuse. We
   advise that you check whether your Internet connection is subjected to such
   limitations and monitor your bandwidth use so that you can stop Dogecoin Core
   before you reach your upload limit.
 
-* Anti-virus: Several people have placed parts of known computer viruses in the
+- Anti-virus: Several people have placed parts of known computer viruses in the
   Dogecoin block chain. This block chain data can't infect your computer, but
   some anti-virus programs quarantine the data anyway, making it more difficult
   to run Dogecoin Core. This problem mostly affects computers running Windows.
 
-* Attack target: Dogecoin Core powers the Dogecoin peer-to-peer network, so
+- Attack target: Dogecoin Core powers the Dogecoin peer-to-peer network, so
   people who want to disrupt the network may attack Dogecoin Core users in ways
   that will affect other things you do with your computer, such as an attack
   that limits your available download bandwidth.
@@ -171,7 +171,7 @@ status bar (left bottom corner).
 ## Linux Instructions
 
 The following instructions describe installing Dogecoin Core using tools
-available in most mainstream Linux distributions.  We assume you use a
+available in most mainstream Linux distributions. We assume you use a
 Bourne-like shell such as `bash`.
 
 Using any computer, go to the [Dogecoin Core download
@@ -180,10 +180,10 @@ install (either 32-bit or 64-bit) and download the file. If necessary, move the
 file to the computer you want to use to run Dogecoin Core.
 
 If you aren't already logged into the computer you want to install Dogecoin on,
-login now.  Make sure you use an account that can use `su` or `sudo` to install
+login now. Make sure you use an account that can use `su` or `sudo` to install
 software into directories owned by the root user.
 
-If you logged in graphically, start a terminal.  If you logged in another way,
+If you logged in graphically, start a terminal. If you logged in another way,
 we will assume you're already in a shell.
 
 Locate the file you downloaded and extract it using the `tar` command followed
@@ -208,7 +208,7 @@ If you use `su` to run commands as root, use the following command line:
 
     su -c 'install -m 0755 -o root -g root -t /usr/local/bin dogecoin-1.14.3/bin/*'
 
-*To continue, choose one of the following options*
+_To continue, choose one of the following options_
 
 1. To use Dogecoin Core Graphical User Interface (GUI), proceed to the
    [Dogecoin Core GUI](#dogecoin-core-gui) section below.
@@ -241,25 +241,25 @@ following message will be displayed:
     /usr/local/bin/dogecoin-qt: error while loading shared libraries: libQtGui.so.4: cannot open shared object file: No such file or directory
 
 Search your distribution's package database for the missing file
-missing and install package containing that file.  Then re-run
+missing and install package containing that file. Then re-run
 `/usr/local/bin/dogecoin-qt` to see if it's missing another file.
 Repeat until Dogecoin Core GUI starts.
 
 You will be prompted to choose a directory to store the Dogecoin block
-chain and your wallet.  Unless you have a separate partition or drive
-you want to use, click *Ok* to use the default.
+chain and your wallet. Unless you have a separate partition or drive
+you want to use, click _Ok_ to use the default.
 
-Dogecoin Core GUI will begin to download the block chain.  This step will take at
+Dogecoin Core GUI will begin to download the block chain. This step will take at
 least several days, and it may take much more time on a slow Internet connection
-or with a slow computer.  During the download, Dogecoin Core will use a
-significant part of your connection bandwidth.  You can stop Dogecoin Core at any
+or with a slow computer. During the download, Dogecoin Core will use a
+significant part of your connection bandwidth. You can stop Dogecoin Core at any
 time by closing it; it will resume from the point where it stopped the next time
 you start it.
 
 After download is complete, you may use Dogecoin Core as your wallet or
 you can just let it run to help support the Dogecoin network.
 
-*Optional: Start Your Node At Login*
+_Optional: Start Your Node At Login_
 
 Starting your node automatically each time you login to your computer
 makes it easy for you to contribute to the network. The easiest way to
@@ -269,7 +269,7 @@ specification](http://standards.freedesktop.org/autostart-spec/autostart-spec-la
 such as Gnome, KDE, and Unity.
 
 While running Dogecoin Core GUI, open the Settings menu and choose
-Options.  On the Main tab, click *Start Dogecoin on system login*.  Click
+Options. On the Main tab, click _Start Dogecoin on system login_. Click
 the Ok button to save the new settings.
 
 The next time you login to your desktop, Dogecoin Core GUI should be
@@ -291,13 +291,13 @@ details.
 
 If you're logged in as an administrative user with sudo access, you may log out.
 The steps in this section should be performed as the user you want to run
-Dogecoin Core.  (This can be a locked account used only by Dogecoin Core.)
+Dogecoin Core. (This can be a locked account used only by Dogecoin Core.)
 
 Type the following command:
 
     dogecoind -daemon
 
-It will print a message that Dogecoin Core is starting.  To interact with
+It will print a message that Dogecoin Core is starting. To interact with
 Dogecoin Core daemon, you will use the command `dogecoin-cli` (Dogecoin command
 line interface).
 
@@ -312,7 +312,6 @@ interaction with your node: `getblockchaininfo`, `getnetworkinfo`,
 
 For example, to safely stop your node, run the following command:
 
-
     dogecoin-cli stop
 
 When Dogecoin Core daemon first starts, it will begin to download the block
@@ -322,11 +321,11 @@ Dogecoin Core will use a significant part of your connection bandwidth. You can
 stop Dogecoin Core at any time using the `stop` command; it will resume from the
 point where it stopped the next time you start it.
 
-*Optional: Start Your Node At Boot*
+_Optional: Start Your Node At Boot_
 
 Starting your node automatically each time your computer boots makes it easy for
-you to contribute to the network.  The easiest way to do this is to start
-Dogecoin Core daemon from your crontab.  To edit your crontab on most
+you to contribute to the network. The easiest way to do this is to start
+Dogecoin Core daemon from your crontab. To edit your crontab on most
 distributions, run the following command:
 
     crontab -e
@@ -363,11 +362,11 @@ Dogecoin Core installer to your desktop.
 After downloading the file to your desktop or your Downloads folder
 (`C:\Users\<YOUR USER NAME>\Downloads`), run it by double-clicking its icon.
 Windows will ask you to confirm that you want to run it. Click Yes and the
-Dogecoin installer will start.  It's a typical Windows installer, and it will
+Dogecoin installer will start. It's a typical Windows installer, and it will
 guide you through the decisions you need to make about where to install Dogecoin
 Core.
 
-*To continue, choose one of the following options*
+_To continue, choose one of the following options_
 
 1. If you want to use the Dogecoin Core Graphical User Interface (GUI),
    proceed to the [Dogecoin Core GUI](#windows-10-dogecoin-core-gui) section below.
@@ -386,13 +385,13 @@ Core.
 
 #### Windows 10 Dogecoin Core GUI
 
-Press the Windows key and start typing "Dogecoin".  When the
+Press the Windows key and start typing "Dogecoin". When the
 Dogecoin Core icon appears (as shown below), click on it.
 
-![Starting Dogecoin Core](/static/img/full-node/win10-start-Dogecoin-core.png)
+![Starting Dogecoin Core](images/full-node/win10-start-Dogecoin-core.png)
 
 You will be prompted to choose a directory to store the Dogecoin block
-chain and your wallet.  Unless you have a separate partition or drive
+chain and your wallet. Unless you have a separate partition or drive
 you want to use, click Ok to use the default.
 
 Your firewall may block Dogecoin Core from making outbound connections.
@@ -400,27 +399,27 @@ It's safe to allow Dogecoin Core to use all networks. (Note: you will
 still need to configure inbound connections as described later in the
 [Network Configuration](#network-configuration) section.)
 
-Dogecoin Core GUI will begin to download the block chain.  This step will take at
+Dogecoin Core GUI will begin to download the block chain. This step will take at
 least several days, and it may take much more time on a slow Internet connection
-or with a slow computer.  During the download, Dogecoin Core will use a
-significant part of your connection bandwidth.  You can stop Dogecoin Core at any
+or with a slow computer. During the download, Dogecoin Core will use a
+significant part of your connection bandwidth. You can stop Dogecoin Core at any
 time by closing it; it will resume from the point where it stopped the next time
 you start it.
 
 After download is complete, you may use Dogecoin Core as your wallet or
 you can just let it run to help support the Dogecoin network.
 
-*Optional: Start Your Node At Login*
+_Optional: Start Your Node At Login_
 
 Starting your node automatically each time you login to your computer
 makes it easy for you to contribute to the network. The easiest way
 to do this is to tell Dogecoin Core GUI to start at login.
 
 While running Dogecoin Core GUI, open the Settings menu and choose
-Options.  On the Main tab, click *Start Dogecoin on system login*.  Click
+Options. On the Main tab, click _Start Dogecoin on system login_. Click
 the Ok button to save the new settings.
 
-![Choosing to start Dogecoin Core at login](/static/img/full-node/win10-start-on-login.png)
+![Choosing to start Dogecoin Core at login](images/full-node/win10-start-on-login.png)
 
 The next time you login to your desktop, Dogecoin Core GUI will be
 automatically started minimized in the task bar.
@@ -439,10 +438,10 @@ details.
 #### Windows 10 Dogecoin Core Daemon
 
 To start Dogecoin Core daemon, first open a command window: press the
-Windows key and type "cmd".  Choose the option labeled
+Windows key and type "cmd". Choose the option labeled
 "Command Prompt".
 
-![Running cmd](/static/img/full-node/win10-running-cmd.png)
+![Running cmd](images/full-node/win10-running-cmd.png)
 
 If you installed Dogecoin Core into the default directory, type the
 following at the command prompt:
@@ -450,7 +449,7 @@ following at the command prompt:
     C:\Program Files\Dogecoin\daemon\dogecoind
 
 Dogecoin Core daemon should start. To interact with Dogecoin Core daemon, you will
-use the command `dogecoin-cli` (Dogecoin command line interface).  If you
+use the command `dogecoin-cli` (Dogecoin command line interface). If you
 installed Dogecoin Core into the default location, type the following at the
 command prompt to see whether it works:
 
@@ -476,10 +475,10 @@ Dogecoin Core will use a significant part of your connection bandwidth. You can
 stop Dogecoin Core at any time using the `stop` command; it will resume from the
 point where it stopped the next time you start it.
 
-*Optional: Start Your Node At Boot*
+_Optional: Start Your Node At Boot_
 
 Starting your node automatically each time your computer boots makes it
-easy for you to contribute to the network.  The easiest way to do this
+easy for you to contribute to the network. The easiest way to do this
 is to start Dogecoin Core daemon when you login to your computer.
 
 Start File Explorer and go to:
@@ -521,38 +520,38 @@ Dogecoin Core installer to your desktop.
 
 After downloading the file to your Downloads folder
 (`/Users/<YOUR USER NAME>/Downloads`), run it by double-clicking
-its icon. OS X will open a Finder window for you to drag *Dogecoin Core* to your
+its icon. OS X will open a Finder window for you to drag _Dogecoin Core_ to your
 Applications folder.
 
 <div id="mac-os-x-dogecoin-core-gui"></div>
 
 #### Mac OS X Dogecoin Core GUI
 
-The first time running *Dogecoin Core*, Max OS X will ask you to confirm that
+The first time running _Dogecoin Core_, Max OS X will ask you to confirm that
 you want to run it.
 
 You will be prompted to choose a directory to store the Dogecoin block
-chain and your wallet.  Unless you have a separate partition or drive
+chain and your wallet. Unless you have a separate partition or drive
 you want to use, click Ok to use the default.
 
-Dogecoin Core GUI will begin to download the block chain.  This step will take at
+Dogecoin Core GUI will begin to download the block chain. This step will take at
 least several days, and it may take much more time on a slow Internet connection
-or with a slow computer.  During the download, Dogecoin Core will use a
-significant part of your connection bandwidth.  You can stop Dogecoin Core at any
+or with a slow computer. During the download, Dogecoin Core will use a
+significant part of your connection bandwidth. You can stop Dogecoin Core at any
 time by closing it; it will resume from the point where it stopped the next time
 you start it.
 
 After download is complete, you may use Dogecoin Core as your wallet or
 you can just let it run to help support the Dogecoin network.
 
-*Optional: Start Your Node At Login*
+_Optional: Start Your Node At Login_
 
 Starting your node automatically each time you login to your computer
 makes it easy for you to contribute to the network. The easiest way
 to do this is to tell Dogecoin Core GUI to start at login.
 
 While running Dogecoin Core GUI, open the Dogecoin Core menu and choose
-Preferences.  On the Main tab, click *Start Dogecoin on system login*.  Click
+Preferences. On the Main tab, click _Start Dogecoin on system login_. Click
 the Ok button to save the new settings.
 
 The next time you login to your desktop, Dogecoin Core GUI will be
@@ -601,7 +600,7 @@ these 8 connections---but if you want to support lightweight clients and
 other full nodes on the network, you must allow inbound connections.
 
 Servers connected directly to the Internet usually don't require any
-special configuration.  You can use the testing instructions below to
+special configuration. You can use the testing instructions below to
 confirm your server-based node accepts inbound connections.
 
 Home connections are usually filtered by a router or modem. Dogecoin
@@ -624,9 +623,9 @@ have any inbound connections. If your node has been online for at least
 check your peer info using Dogecoin Core, choose the appropriate
 instructions below:
 
-* [Peer info in Dogecoin Core GUI](#gui-peer-info)
+- [Peer info in Dogecoin Core GUI](#gui-peer-info)
 
-* [Peer info in Dogecoin Core daemon](#daemon-peer-info)
+- [Peer info in Dogecoin Core daemon](#daemon-peer-info)
 
 <div id="gui-peer-info"></div>
 
@@ -638,14 +637,14 @@ connections you have. The icon won't be fully filled in until you have more
 than 8 active connections, which only happens if inbound connections
 are allowed.
 
-![Active connections](/static/img/full-node/active-connections.png)
+![Active connections](images/full-node/active-connections.png)
 
 For confirmation, you can go to the Help menu, choose Debug Window, and
 open the Information tab. In the Network section, it will tell you
 exactly how many inbound connections you have. If the number is greater
 than zero, then inbound connections are allowed.
 
-![Debug window with inbound connections](/static/img/full-node/debug-inbound-connections.png)
+![Debug window with inbound connections](images/full-node/debug-inbound-connections.png)
 
 If you don't have inbound connections, please read the instructions for [enabling inbound
 connections.](#enabling-connections)
@@ -661,8 +660,8 @@ than 8 connections, inbound connections are allowed. For example:
     10
 
 For confirmation, you can use the `getpeerinfo` command to get
-information about all of your peers.  Each peer's details will include
-an `inbound` field set to true if the connection is inbound.  If you
+information about all of your peers. Each peer's details will include
+an `inbound` field set to true if the connection is inbound. If you
 have any inbound connections, then inbound connections are allowed.
 
 If you don't have inbound connections, please read instructions for [enabling inbound
@@ -673,7 +672,7 @@ connections.](#enabling-connections)
 ### Enabling Connections
 
 If Dogecoin Core can't automatically configure your router to open port
-22556, you will need to manually configure your router.  We've tried to
+22556, you will need to manually configure your router. We've tried to
 make the following instructions generic enough to cover most router
 models; if you need specific help with your router, please ask for help
 on a tech support site such as [SuperUser](http://superuser.com/).
@@ -702,31 +701,31 @@ However, routers usually give computers dynamic IP addresses that change
 frequently, so we need to ensure your router always gives your computer
 the same internal IP address.
 
-Start by logging into your router's administration interface.  Most
+Start by logging into your router's administration interface. Most
 routers can be configured using one of the following URLs, so keep
-clicking links until you find one that works.  If none work, consult
+clicking links until you find one that works. If none work, consult
 your router's manual.
 
-* <http://192.168.0.1> (some Linksys/Cisco models)
-* <http://192.168.1.1> (some D-Link/Netgear models)
-* <http://192.168.2.1> (some Belkin/SMC models)
-* <http://192.168.123.254> (some US Robotics models)
-* <http://10.0.1.1> (some Apple models)
+- <http://192.168.0.1> (some Linksys/Cisco models)
+- <http://192.168.1.1> (some D-Link/Netgear models)
+- <http://192.168.2.1> (some Belkin/SMC models)
+- <http://192.168.123.254> (some US Robotics models)
+- <http://10.0.1.1> (some Apple models)
 
 Upon connecting, you will probably be prompted for a username and
-password.  If you configured a password, enter it now.  If not,
+password. If you configured a password, enter it now. If not,
 the [Router Passwords site](http://www.routerpasswords.com/) provides a
 database of known default username and password pairs.
 
 After logging in, you want to search your router's menus for options
-related to DHCP, the Dynamic Host Configuration Protocol.  These options
+related to DHCP, the Dynamic Host Configuration Protocol. These options
 may also be called Address Reservation.
 
 In the reservation configuration, some routers will display a list of
 computers and devices currently connected to your network, and then let
 you select a device to make its current IP address permanent:
 
-![Easy DHCP reservation](/static/img/full-node/easy-dhcp-reservation.png)
+![Easy DHCP reservation](images/full-node/easy-dhcp-reservation.png)
 
 If that's the case, find the computer running Dogecoin Core in the list,
 select it, and add it to the list of reserved addresses. Make a note of
@@ -737,7 +736,7 @@ you will need to look up the fixed address (MAC address) for your
 computer's network card and add it to the list. This operation differs
 by operating system:
 
-* **Windows 7 & 8:** Press Win-R (Windows key plus the R key) to open
+- **Windows 7 & 8:** Press Win-R (Windows key plus the R key) to open
   the Run dialog. Type `cmd` to open the console. Type `ipconfig /all` and
   find the result that best matches your connection---usually a wireless
   connection. Look for a line that starts with "Physical Address" and
@@ -745,16 +744,16 @@ by operating system:
 
         Physical Address. . . . . . . . . : 01-23-45-67-89-AB
 
-    Replace all the dashes with colons, so the address looks like this:
-    01:23:45:67:89:AB.  Use that address in the instructions below.
+  Replace all the dashes with colons, so the address looks like this:
+  01:23:45:67:89:AB. Use that address in the instructions below.
 
-* **Linux:** open a terminal and type `ifconfig`. Find the result that
+- **Linux:** open a terminal and type `ifconfig`. Find the result that
   best matches your connection---a result starting with `wlan` indicates
   a wireless connection. Find the field that starts with `HWaddr` and copy
   the immediately following field that looks like 01:23:45:67:89:ab. Use
   that value in the instructions below.
 
-* **Mac OS X:** open a terminal and type `ifconfig`. Find the result
+- **Mac OS X:** open a terminal and type `ifconfig`. Find the result
   that best matches your connection---a result starting with `en1`
   usually indicates a wireless connection. Find the field that starts
   with `ether:` and copy the immediately following field that looks like
@@ -766,7 +765,7 @@ address and make a note of it for the instructions in the next
 subsection. After entering this information, click the Add or Save
 button.
 
-![Manual DHCP reservation](/static/img/full-node/manual-dhcp-reservation.png)
+![Manual DHCP reservation](images/full-node/manual-dhcp-reservation.png)
 
 Then reboot your computer to ensure it gets assigned the address you
 selected and proceed to the Port Forwarding instructions below.
@@ -780,15 +779,15 @@ running Dogecoin Core. You should have this information from configuring
 the DHCP assignment table in the subsection above.
 
 Login to your router using the same steps described near the top of the
-[DHCP subsection](#configuring-dhcp).  Look for an option called Port Forwarding, Port
-Assignment, or anything with "Port" in its name.  On some routers,
+[DHCP subsection](#configuring-dhcp). Look for an option called Port Forwarding, Port
+Assignment, or anything with "Port" in its name. On some routers,
 this option is buried in an Applications & Gaming menu.
 
 The port forwarding settings should allow you to map an external port on
 your router to the "internal port" of a device on your network as shown
 in the screenshot below.
 
-![Port forwarding](/static/img/full-node/port-forwarding.png)
+![Port forwarding](images/full-node/port-forwarding.png)
 
 Both the external port and the internal port should be 22556 for Dogecoin.
 Make sure the IP address you enter is the same one you configured in the previous subsection.
@@ -813,15 +812,15 @@ instructions, please [open an issue.](https://github.com/dogecoinisawesome-dot-c
 
 #### Firewall Configuration
 
-Firewalls block inbound connections.  To use Dogecoin, you need to
+Firewalls block inbound connections. To use Dogecoin, you need to
 configure your computer's firewall to allow connections to port 22556.
 This is usually as easy as starting your firewall configuration software
-and defining a new rule to allow inbound connections to port 22556.  For
+and defining a new rule to allow inbound connections to port 22556. For
 additional information for Windows, see the links below:
 
-* [Instructions for Windows Firewall](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-port-rule)
-* [Instructions for Norton Firewall](http://community.norton.com/en/forums/firewall-blocking-program-how-open-ports)
-* [Instructions for Mcafee Personal Firewall](http://service.mcafee.com/FAQDocument.aspx?id=TS100887)
+- [Instructions for Windows Firewall](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-port-rule)
+- [Instructions for Norton Firewall](http://community.norton.com/en/forums/firewall-blocking-program-how-open-ports)
+- [Instructions for Mcafee Personal Firewall](http://service.mcafee.com/FAQDocument.aspx?id=TS100887)
 
 Mac OS X comes with its firewall disabled by default, but if you have
 enabled it, see the section Allowing Specific Applications from the
@@ -851,8 +850,8 @@ instructions, please [open an issue.](https://github.com/dogecoinisawesome-dot-c
 This section contains advice about how to change your Dogecoin Core
 configuration to adapt it to your needs.
 
-There are two ways to change your configuration.  The first is to start
-Dogecoin Core with the options you want.  For example, if you want to
+There are two ways to change your configuration. The first is to start
+Dogecoin Core with the options you want. For example, if you want to
 limit it to using one CPU core for signature verification, you can start
 Dogecoin Core like this:
 
@@ -865,20 +864,19 @@ dogecoin-qt -par=1
 ```
 
 Once you've decided you like an option, you can add it to the Dogecoin
-Core configuration file.  You can find that file in the following
+Core configuration file. You can find that file in the following
 directories:
 
 - Windows: %APPDATA%\Dogecoin\
 
-- OSX: $HOME/Library/Application Support/Dogecoin/
+- OSX: \$HOME/Library/Application Support/Dogecoin/
 
-- Linux: $HOME/.dogecoin/
+- Linux: \$HOME/.dogecoin/
 
 To add an option to the configuration file, just remove its leading
-dash.  You may also need to remove any quotation marks you used in your shell.
+dash. You may also need to remove any quotation marks you used in your shell.
 For example, the `-par` option seen above would look like this in the
 configuration file:
-
 
     par=1
 
@@ -928,7 +926,7 @@ Ways to reduce traffic:
 A major component of the traffic is caused by serving historic blocks to other nodes
 during the initial blocks download phase (syncing up a new node).
 This option can be specified in MiB per day and is turned off by default.
-This is *not* a hard limit; only a threshold to minimize the outbound
+This is _not_ a hard limit; only a threshold to minimize the outbound
 traffic. When the limit is about to be reached, the uploaded data is cut by no
 longer serving historic blocks (blocks older than one week).
 Keep in mind that new nodes require other nodes that are willing to serve
