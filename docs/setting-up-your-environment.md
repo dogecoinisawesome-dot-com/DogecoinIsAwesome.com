@@ -3,15 +3,14 @@
 #### Build The Site Locally
 
 DogecoinIsAwesome.com is created using [Python
-Flask](https://flask.palletsprojects.com/en/1.1.x/).  To build the site, you
+Flask](https://flask.palletsprojects.com/en/1.1.x/). To build the site, you
 need to go through a one-time installation procedure that takes 10 to 20
-minutes.  After that you can build the site an unlimited number of times with no
+minutes. After that you can build the site an unlimited number of times with no
 extra work.
 
 **Create A Python Virtual Environment**
 
-Make sure you have Python 3.9.1 installed locally and check out the site
-repository.
+Make sure you have Python 3.9.5 installed locally and check out the site repository.
 
 To create a Python virtual environment, simply run this command in the top-level
 directory of your local repository:
@@ -36,8 +35,7 @@ To preview the website in your local browser, run the following command:
 
     py -m flask run
 
-This will compile the site and then print a
-message like this:
+This will compile the site and then print a message like this:
 
 ```
 * Serving Flask app "dogecoinisawesome.py" (lazy loading)
