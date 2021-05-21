@@ -2,43 +2,7 @@
 
 Support the Dogecoin network by running your own full node.
 
-- [What Is A Full Node?](#what-is-a-full-node)
-- [Costs And Warnings](#costs-and-warnings)
-    - [Special Cases](#special-cases)
-    - [Secure Your Wallet](#secure-your-wallet)
-    - [Minimum Requirements](#minimum-requirements)
-    - [Possible Problems](#possible-problems)
-- [Initial Block Download (IBD)](#initial-block-download-ibd)
-- [Linux Instructions](#linux-instructions)
-    - [Dogecoin Core GUI](#dogecoin-core-gui)
-    - [Dogecoin Core Daemon](#dogecoin-core-daemon)
-- [Windows Instructions](#windows-instructions)
-    - [Windows 10 ](#windows-10)
-        - [Dogecoin Core GUI](#windows-10-dogecoin-core-gui)
-        - [Dogecoin Core Daemon](#windows-10-dogecoin-core-daemon)
-- [Mac OS X Instructions](#mac-os-x-instructions)
-    - [Mac OS X Yosemite 10.10.x+](#mac-os-x-yosemite-10.10.x+)
-        - [Dogecoin Core GUI](#mac-os-x-dogecoin-core-gui)
-- [Upgrading Dogecoin Core](#upgrading-dogecoin-core)
-- [Network Configuration](#network-configuration)
-    - [Testing Connections](#testing-connections)
-        - [GUI Peer Info](#gui-peer-info)
-        - [Daemon Peer Info](#daemon-peer-info)
-    - [Enabling Connections](#enabling-connections)
-        - [Configuring DHCP](#configuring-dhcp)
-            - [Port Forwarding](#port-forwarding)
-        - [Firewall Configuration](#firewall-configuration)
-- [Configuration Tuning](#configuration-tuning)
-    - [Reduce Storage](#reduce-storage)
-    - [Reduce Traffic](#reduce-traffic)
-        - [Maximum Upload Targets](#maximum-upload-targets)
-        - [Disable listening](#disable-listening)
-        - [Reduce maximum connections](#reduce-maximum-connections)
-        - [Blocks-only mode](#blocks-only-mode)
-- [Report An Issue](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com/issues/new)
-- [Edit On Github](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com/blob/main/static/docs/full-node.md)
-
-<div id="what-is-a-full-node"></div>
+[TOC]
 
 ## What Is A Full Node?
 
@@ -58,15 +22,11 @@ and bandwidth resources---but more volunteers are needed to allow Dogecoin to
 continue to grow. This document describes how you can help and what helping
 will cost you.
 
-<div id="costs-and-warnings"></div>
-
 ## Costs And Warnings
 
 Running a Dogecoin full node comes with certain costs and can expose you to
 certain risks. This section will explain those costs and risks so you can decide
 whether you're able to help the network.
-
-<div id="special-cases"></div>
 
 ### Special Cases
 
@@ -76,15 +36,11 @@ special safety precautions. This document does not cover those precautions---it
 only describes running a full node to help support the Dogecoin network in
 general.
 
-<div id="secure-your-wallet"></div>
-
 ### Secure Your Wallet
 
 It's possible and safe to run a full node to support the network and use its
 wallet to store your Dogecoins, but you must take the same precautions you would
 when using any Dogecoin wallet. Please see the [dogecoin core guide](https://www.reddit.com/r/dogecoin/wiki/dogecoincoreguide#wiki_safety_first.21_encrypting_your_wallet) for more information.
-
-<div id="minimum-requirements"></div>
 
 ### Minimum Requirements
 
@@ -118,8 +74,6 @@ node.
   "sleep" or "suspend" options to ensure you support the network whenever your
   computer is running.
 
-<div id="possible-problems"></div>
-
 ### Possible Problems
 
 - Legal: Dogecoin use is prohibited or restricted in some areas.
@@ -140,8 +94,6 @@ node.
   people who want to disrupt the network may attack Dogecoin Core users in ways
   that will affect other things you do with your computer, such as an attack
   that limits your available download bandwidth.
-
-<div id="initial-block-download-ibd"></div>
 
 ## Initial Block Download (IBD)
 
@@ -165,8 +117,6 @@ balance.
 
 If you are using Dogecoin Core GUI, you can monitor the progress of IBD in the
 status bar (left bottom corner).
-
-<div id="linux-instructions"></div>
 
 ## Linux Instructions
 
@@ -222,8 +172,6 @@ _To continue, choose one of the following options_
    instructions](#dogecoin-core-daemon). Note that you can't run both the
    GUI and the daemon at the same time using the same configuration
    directory.
-
-<div id="dogecoin-core-gui"></div>
 
 ### Dogecoin Core GUI
 
@@ -284,8 +232,6 @@ You have now completed installing Dogecoin Core.
 To support the Dogecoin network, you also need to allow incoming connections.
 Please read the [Network Configuration](#network-configuration) section for
 details.
-
-<div id="dogecoin-core-daemon"></div>
 
 ### Dogecoin Core Daemon
 
@@ -348,11 +294,7 @@ To support the Dogecoin network, you also need to allow incoming connections.
 Please read the [Network Configuration](#network-configuration) section for
 details.
 
-<div id="windows-instructions"></div>
-
 ## Windows Instructions
-
-<div id="windows-10"></div>
 
 ### Windows 10
 
@@ -380,8 +322,6 @@ _To continue, choose one of the following options_
    instructions](#windows-10-dogecoin-core-daemon). Note that you can't run both the GUI
    and the daemon at the same time using the same configuration
    directory.
-
-<div id="windows-10-dogecoin-core-gui"></div>
 
 #### Windows 10 Dogecoin Core GUI
 
@@ -432,8 +372,6 @@ You have now completed installing Dogecoin Core.
 To support the Dogecoin network, you also need to allow incoming connections.
 Please read the [Network Configuration](#network-configuration) section for
 details.
-
-<div id="windows-10-dogecoin-core-daemon"></div>
 
 #### Windows 10 Dogecoin Core Daemon
 
@@ -507,11 +445,7 @@ To support the Dogecoin network, you also need to allow incoming connections.
 Please read the [Network Configuration](#network-configuration) section for
 details.
 
-<div id="mac-os-x-instructions"></div>
-
 ## Mac OS X Instructions
-
-<div id="mac-os-x-yosemite-10.10.x+"></div>
 
 ### Mac OS X Yosemite 10.10.x+
 
@@ -522,8 +456,6 @@ After downloading the file to your Downloads folder
 (`/Users/<YOUR USER NAME>/Downloads`), run it by double-clicking
 its icon. OS X will open a Finder window for you to drag _Dogecoin Core_ to your
 Applications folder.
-
-<div id="mac-os-x-dogecoin-core-gui"></div>
 
 #### Mac OS X Dogecoin Core GUI
 
@@ -563,8 +495,6 @@ To support the Dogecoin network, you also need to allow incoming connections.
 Please read the [Network Configuration](#network-configuration) section for
 details.
 
-<div id="upgrading-dogecoin-core"></div>
-
 ## Upgrading Dogecoin Core
 
 If you are running an older version, shut it down. Wait until it has completely
@@ -585,8 +515,6 @@ upgrade from a very old version.
 
 Sometimes downgrade is not possible because of changes to the data files. Again,
 check the release notes for the new version if you are planning to downgrade.
-
-<div id="network-configuration"></div>
 
 ## Network Configuration
 
@@ -611,8 +539,6 @@ configure your router. You may also need to configure your firewall to
 allow inbound connections to port 22556. Please see the following
 subsections for details.
 
-<div id="testing-connections"></div>
-
 ### Testing Connections
 
 For confirmation that you accept inbound connections, you can use
@@ -626,8 +552,6 @@ instructions below:
 - [Peer info in Dogecoin Core GUI](#gui-peer-info)
 
 - [Peer info in Dogecoin Core daemon](#daemon-peer-info)
-
-<div id="gui-peer-info"></div>
 
 #### GUI Peer Info
 
@@ -649,8 +573,6 @@ than zero, then inbound connections are allowed.
 If you don't have inbound connections, please read the instructions for [enabling inbound
 connections.](#enabling-connections)
 
-<div id="daemon-peer-info"></div>
-
 #### Daemon Peer Info
 
 The `getconnectioncount` command will tell you how many connections you have. If you have more
@@ -666,8 +588,6 @@ have any inbound connections, then inbound connections are allowed.
 
 If you don't have inbound connections, please read instructions for [enabling inbound
 connections.](#enabling-connections)
-
-<div id="enabling-connections"></div>
 
 ### Enabling Connections
 
@@ -690,8 +610,6 @@ step for firewall users:
 3. Configuring your firewall to allow inbound connections. This step
    mainly applies to Windows users, as Mac OS X and most Linuxes do not
    enable a firewall by default.
-
-<div id="configuring-dhcp"></div>
 
 #### Configuring DHCP
 
@@ -770,8 +688,6 @@ button.
 Then reboot your computer to ensure it gets assigned the address you
 selected and proceed to the Port Forwarding instructions below.
 
-<div id="port-forwarding"></div>
-
 #### Port Forwarding
 
 For this step, you need to know the local IP address of the computer
@@ -808,8 +724,6 @@ help on sites like [SuperUser](http://superuser.com).
 We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com/issues/new)
 
-<div id="firewall-configuration"></div>
-
 #### Firewall Configuration
 
 Firewalls block inbound connections. To use Dogecoin, you need to
@@ -842,8 +756,6 @@ ask for help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/dogecoinisawesome-dot-com/DogecoinIsAwesome.com/issues/new)
-
-<div id="configuration-tuning"></div>
 
 ## Configuration Tuning
 
@@ -882,8 +794,6 @@ configuration file:
 
 If you have any questions about configuring Dogecoin Core, please stop by our [subreddit](https://www.reddit.com/r/dogecoin/).
 
-<div id="reduce-storage"></div>
-
 ### Reduce Storage
 
 It is possible to configure your node to to run in pruned mode in order to
@@ -904,8 +814,6 @@ of more than 2 days - which are unlikely to happen in practice. In future
 releases, a higher value may also help the network as a whole because stored
 blocks could be served to other nodes.
 
-<div id="reduce-traffic"></div>
-
 ### Reduce Traffic
 
 Some node operators need to deal with bandwidth caps imposed by their ISPs.
@@ -916,8 +824,6 @@ which are outbound. You can therefore have at most 117 inbound connections.
 The default settings can result in relatively significant traffic consumption.
 
 Ways to reduce traffic:
-
-<div id="maximum-upload-targets"></div>
 
 #### Maximum Upload Targets
 
@@ -933,8 +839,6 @@ Keep in mind that new nodes require other nodes that are willing to serve
 historic blocks. **The recommended minimum is 144 blocks per day (max. 144MiB
 per day)**
 
-<div id="disable-listening"></div>
-
 #### Disable listening
 
     -listen=0
@@ -943,8 +847,6 @@ Disabling listening will result in fewer nodes connected (remember the maximum o
 outbound peers). Fewer nodes will result in less traffic usage as you are relaying
 blocks and transactions to fewer nodes.
 
-<div id="reduce-maximum-connections"></div>
-
 #### Reduce maximum connections
 
     -maxconnections=<num>
@@ -952,8 +854,6 @@ blocks and transactions to fewer nodes.
 Reducing the maximum connected nodes to a minimum could be desirable if traffic
 limits are tiny. Keep in mind that Dogecoin's trustless model works best if you are
 connected to a handful of nodes.
-
-<div id="blocks-only-mode"></div>
 
 #### Blocks-only mode
 

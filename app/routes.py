@@ -18,7 +18,8 @@ def full_node():
     try:
         readme_file = open("./app/static/docs/full-node.md", "r")
         md_template_string = markdown.markdown(
-            readme_file.read(), extensions=["markdown.extensions.fenced_code"]
+            readme_file.read(),
+            extensions=["markdown.extensions.fenced_code", "markdown.extensions.toc"],
         )
         return render_template(
             "full-node.html",
