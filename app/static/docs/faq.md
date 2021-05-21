@@ -132,7 +132,7 @@ There is no implemented hard cap on the total supply of Dogecoins. At this point
 
 Dogecoins have value because they are useful as a form of money. Dogecoin has the characteristics of money (durability, portability, fungibility, scarcity, divisibility, and recognizability) based on the properties of mathematics rather than relying on physical properties (like gold and silver) or trust in central authorities (like fiat currencies). In short, Dogecoin is backed by mathematics. With these attributes, all that is required for a form of money to hold value is trust and adoption. In the case of Dogecoin, this can be measured by its growing base of users, merchants, and startups. As with all currency, dogecoin's value comes only and directly from people willing to accept them as payment.
 
-### What determines dogecoin’s price?
+### What determines dogecoin's price?
 
 The price of a dogecoin is determined by supply and demand. When demand for dogecoins increases, the price increases, and when demand falls, the price falls. Because Dogecoin is still a relatively small market compared to what it could be, it doesn't take significant amounts of money to move the market price up or down, and thus the price of a dogecoin is still very volatile.
 
