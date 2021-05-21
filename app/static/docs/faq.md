@@ -14,9 +14,7 @@ Dogecoin is a consensus network that enables a new payment system and a complete
 
 Developers Mr. Markus and Jackson Palmer co-created dogecoin as a joke in 2013. Even the way people originally obtained the coin was meant to be ridiculous: In return for solving mathematical puzzles, dogecoin miners operating fast-running computers received anywhere from one dogecoin to hundreds of thousands of dogecoins.
 
-Neither works on the project anymore, and Mr. Markus has said he sold all of his dogecoin in 2015. He made just enough from it to buy a used Honda Civic.
-
-_"The idea of dogecoin being worth 8 cents is the same as GameStop being worth \$325,"_ Mr. Markus, 38 years old, said recently. _"It doesn’t make sense. It’s super absurd. The coin design was absurd."_
+Neither works on the project anymore, and Mr. Markus has said he sold all of his dogecoin in 2015.
 
 ### Who controls the Dogecoin network?
 
