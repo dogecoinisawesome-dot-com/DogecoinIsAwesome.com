@@ -22,8 +22,25 @@ def full_node():
             extensions=["markdown.extensions.fenced_code", "markdown.extensions.toc"],
         )
         return render_template(
-            "full-node.html",
+            "content.html",
             title="Running a Full Node",
+            markdown_html=md_template_string,
+        )
+    except IndexError:
+        abort(404)
+
+
+@app.route("/faq")
+def faq():
+    try:
+        readme_file = open("./app/static/docs/faq.md", "r")
+        md_template_string = markdown.markdown(
+            readme_file.read(),
+            extensions=["markdown.extensions.fenced_code", "markdown.extensions.toc"],
+        )
+        return render_template(
+            "content.html",
+            title="FAQ",
             markdown_html=md_template_string,
         )
     except IndexError:
