@@ -16,6 +16,10 @@ pre {
     margin-bottom: 0px;
 }
 
+.toc li {
+    font-size: 14px;
+}
+
 li {
     margin-top: 2px;
 }
