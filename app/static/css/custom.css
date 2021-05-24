@@ -5,12 +5,14 @@ pre {
     box-sizing: border-box;
     line-height: 1.4;
 }
+
 pre {
     overflow-x: auto;
     background-color: #f6f8fa;
 }
-ul,
-ol {
+
+.toc ul,
+.toc ol {
     margin-bottom: 0px;
 }
 

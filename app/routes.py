@@ -40,7 +40,24 @@ def faq():
         )
         return render_template(
             "content.html",
-            title="FAQ",
+            title="Find answers to recurring questions and myths about Dogecoin.",
+            markdown_html=md_template_string,
+        )
+    except IndexError:
+        abort(404)
+
+
+@app.route("/dogecoin-wallets")
+def wallets():
+    try:
+        readme_file = open("./app/static/docs/dogecoin-wallets.md", "r")
+        md_template_string = markdown.markdown(
+            readme_file.read(),
+            extensions=["markdown.extensions.fenced_code", "markdown.extensions.toc"],
+        )
+        return render_template(
+            "content.html",
+            title="Which wallet is best for Dogecoin?",
             markdown_html=md_template_string,
         )
     except IndexError:
