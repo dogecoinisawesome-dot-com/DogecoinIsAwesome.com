@@ -51,7 +51,7 @@ figure {
 }
 
 .body {
-  height: 100.0000025796769%;
+  height: 100.0000025796769vh;
   background-color: #fff;
   font-family: Mulish, sans-serif;
   color: #303030;
@@ -82,6 +82,7 @@ figure {
 }
 
 .footer {
+  margin-top: auto;
   padding-top: 60px;
   padding-bottom: 40px;
   -webkit-box-align: start;
@@ -261,13 +262,18 @@ figure {
 }
 
 .div-main {
-  display: -ms-grid;
-  display: grid;
-  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   grid-auto-columns: 1fr;
   grid-auto-rows: auto;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
   -ms-grid-rows: auto auto 1fr;
