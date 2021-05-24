@@ -40,7 +40,7 @@ def faq():
         )
         return render_template(
             "content.html",
-            title="Find answers to recurring questions and myths about Dogecoin.",
+            title="Frequently Asked Questions and Myths About Dogecoin",
             markdown_html=md_template_string,
         )
     except IndexError:
