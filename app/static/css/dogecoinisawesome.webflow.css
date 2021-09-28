@@ -262,6 +262,10 @@ figure {
   text-align: center;
 }
 
+.donate-banner a {
+  color: white;
+}
+
 .dogecoin-address {
   color: #f5d43c;
 }
