@@ -1,0 +1,1 @@
+web: gunicorn dogecoinisawesome:app 0.0.0.0:$PORT
