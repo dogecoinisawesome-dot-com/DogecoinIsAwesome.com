@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+    environment:
+      FLASK_APP: dogecoinisawesome.py
+      FLASK_ENV: development
+    ports:
+      - 8000:5000
+    volumes:
+      - ./:/app
