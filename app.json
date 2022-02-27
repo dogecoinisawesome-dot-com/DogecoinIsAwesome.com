@@ -22,5 +22,6 @@
       "size": "free"
     }
   },
-  "image": "heroku/python"
+  "image": "heroku/python",
+  "stack": "container"
 }
