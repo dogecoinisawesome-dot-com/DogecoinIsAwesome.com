@@ -33,8 +33,6 @@ And install the necessary dependencies using `pip`:
 
         docker-compose -f docker-compose.dev.yml up --build
 
-    This will run an image inside of a container.
-
 1.  To preview the website in your local browser, go to: [http://localhost:8000/](http://localhost:8000/)
 
 1.  Press ctrl-c to stop the container.
