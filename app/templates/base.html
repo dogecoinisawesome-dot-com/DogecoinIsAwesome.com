@@ -1,16 +1,17 @@
-<!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Sun May 09 2021 09:53:28 GMT+0000 (Coordinated Universal Time)  -->
 <html lang="en" data-wf-page="6094f4c2f1b9885e5a5ef229" data-wf-site="6094f4c1f1b98891135ef228">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     {% if title %}
     <title>{{ title }} | Dogecoin Is Awesome!</title>
     {% else %}
     <title>Dogecoin Is Awesome!</title>
     {% endif %}
-    <meta name="author" content="Jacek Trociński">
-    <meta name="keywords" content="dogecoin, doge, how to, guide">
+    <meta name="author" content="Jacek Trociński" />
+    <meta name="keywords" content="dogecoin, doge, how to, guide" />
     <meta content="Find everything you need to know about Dogecoin." name="description">
     <meta content="Dogecoin Is Awesome!" property="og:title">
     <meta content="Find everything you need to know about Dogecoin." property="og:description">
@@ -27,7 +28,7 @@
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/webflow.css" rel="stylesheet" type="text/css">
     <link href="css/dogecoinisawesome.webflow.css" rel="stylesheet" type="text/css">
-    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
     <script type="text/javascript">WebFont.load({ google: { families: ["Mulish:regular,700"] } });</script>
     <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
@@ -39,14 +40,30 @@
 
 <body class="body">
     <div class="div-main">
-        <div class="donate-banner"><strong><a href="https://commerce.coinbase.com/checkout/e4d5df8d-cdd6-4ec1-94e1-9ef31ffb9755">DogecoinIsAwesome.com needs your support! Donate.</a><br></strong><span
-                class="dogecoin-address">DDNhF6qpFPHM1KxLUWJp3WPa57QCX1Jt2F</span></div>
+        <div class="main-header">
+            <div class="w-container">
+                <div class="w-layout-grid grid">
+                    <div id="w-node-a46f46ab-95b5-86c3-dec4-442f2a7cfc0b-76a42be5" class="donate-banner"><strong
+                            class="bold-text">DogecoinIsAwesome.com needs your support! </strong>
+                        <a href="https://commerce.coinbase.com/checkout/e4d5df8d-cdd6-4ec1-94e1-9ef31ffb9755"
+                            target="_blank" class="donate-link"><strong
+                                class="donate-link">Donate.</strong></a><strong><br></strong><span
+                            class="dogecoin-address">DDNhF6qpFPHM1KxLUWJp3WPa57QCX1Jt2F</span>
+                    </div>
+                    <div id="w-node-_7a44a79b-88fb-8fd2-89b4-8494dec76e59-76a42be5"
+                        class="twitter w-widget w-widget-twitter"><iframe title="Twitter Follow Button"
+                            allowtransparency="true" frameborder="0" scrolling="no"
+                            src="https://platform.twitter.com/widgets/follow_button.html#dnt=true&amp;height=28&amp;screen_name=DogecoinAwesome&amp;show_count=true&amp;size=l&amp;width=100%25"
+                            style="border: none; height: 28px; overflow: hidden; width: 100%;"></iframe></div>
+                </div>
+            </div>
+        </div>
         <div data-collapse="small" data-animation="default" data-duration="400" role="banner" class="navbar-2 w-nav">
             <nav class="container-4 w-container">
                 <ul role="list" class="nav-grid-2 w-list-unstyled">
                     <li id="w-node-_74c1c4d6-2c99-458e-4548-7ed9839b7517-76a42be5">
                         <a href="/index" class="nav-logo-link-2"><img src="images/DogecoinIsAwesome_logo.png"
-                                alt="DogecoinIsAwesome.com" width="250" class="nav-logo-2"></a>
+                                alt="DogecoinIsAwesome.com" width="250" class="nav-logo-2" /></a>
                     </li>
                     <li>
                         <div class="w-nav-button">
@@ -64,9 +81,12 @@
         {% block content %}{% endblock %}
         <footer id="footer" class="footer">
             <div class="w-container">
-                <div class="div-block-2">Copyright © 2021 DogecoinIsAwesome.com.<br>
-                    <p>Released under the <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT
-                            license</a>.</p>
+                <div class="div-block-2">
+                    Copyright © 2021 DogecoinIsAwesome.com.<br />
+                    <p>
+                        Released under the
+                        <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a>.
+                    </p>
                 </div>
             </div>
         </footer>
