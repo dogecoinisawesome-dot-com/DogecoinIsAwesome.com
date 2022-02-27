@@ -12,7 +12,7 @@ minutes.
 After that you can build the site an unlimited number of times with no
 extra work.
 
-## **Create A Python Virtual Environment**
+### **Create A Python Virtual Environment**
 
 Make sure you have Python 3.10.2 installed locally and check out the site repository.
 
@@ -25,19 +25,11 @@ And install the necessary dependencies using `pip`:
 
     py -m pip install -r requirements.txt
 
-## **Setup Config Vars**
-
-Create a `.env` file in the the top-level of your local repository and then copy and
-paste the following lines into the file:
-
-    FLASK_APP=dogecoinisawesome.py
-    FLASK_ENV=development
-
-## **Preview The Site**
+### **Preview The Site**
 
 1.  Download and install the latest version of [Docker Desktop](https://docs.docker.com/get-docker/).
 
-1.  To start the application and to confirm that it is running properly, run the following command:
+1.  To start the application, run the following command:
 
         docker-compose -f docker-compose.dev.yml up --build
 
