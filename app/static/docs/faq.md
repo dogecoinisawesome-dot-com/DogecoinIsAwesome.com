@@ -1,6 +1,11 @@
 # Frequently Asked Questions
 
-Find answers to recurring questions and myths about Dogecoin.
+Find answers to recurring questions and myths about Dogecoin.[^license]
+
+[^license]:
+    This work, "Frequently Asked Questions", is a derivative of "[Frequently Asked Questions](https://bitcoin.org/en/faq)", used under MIT License (MIT) available on [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
+
+    "Frequently Asked Questions" is licensed under MIT License (MIT) available on [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT) by DogecoinIsAwesome.com
 
 [TOC]
 
