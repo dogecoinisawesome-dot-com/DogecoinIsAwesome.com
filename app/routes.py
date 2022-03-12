@@ -19,7 +19,11 @@ def full_node():
         readme_file = open("./app/static/docs/full-node.md", "r")
         md_template_string = markdown.markdown(
             readme_file.read(),
-            extensions=["markdown.extensions.fenced_code", "markdown.extensions.toc"],
+            extensions=[
+                "markdown.extensions.fenced_code",
+                "markdown.extensions.toc",
+                "markdown.extensions.footnotes",
+            ],
         )
         return render_template(
             "content.html",
@@ -36,7 +40,11 @@ def faq():
         readme_file = open("./app/static/docs/faq.md", "r")
         md_template_string = markdown.markdown(
             readme_file.read(),
-            extensions=["markdown.extensions.fenced_code", "markdown.extensions.toc"],
+            extensions=[
+                "markdown.extensions.fenced_code",
+                "markdown.extensions.toc",
+                "markdown.extensions.footnotes",
+            ],
         )
         return render_template(
             "content.html",
@@ -53,7 +61,11 @@ def wallets():
         readme_file = open("./app/static/docs/dogecoin-wallets.md", "r")
         md_template_string = markdown.markdown(
             readme_file.read(),
-            extensions=["markdown.extensions.fenced_code", "markdown.extensions.toc"],
+            extensions=[
+                "markdown.extensions.fenced_code",
+                "markdown.extensions.toc",
+                "markdown.extensions.footnotes",
+            ],
         )
         return render_template(
             "content.html",

@@ -1,12 +1,19 @@
 # Dogecoin Wallets
 
-As Dogecoin is a digital asset, it can be very un-intuitive to store safely. Historically many people have lost their coins but with proper understanding the risks can be eliminated. **If your Dogecoins do end up lost or stolen then there's almost certainly nothing that can be done to get them back.**
+As Dogecoin is a digital asset, it can be very un-intuitive to store safely. Historically many people have lost their coins but with proper understanding the risks can be eliminated. **If your Dogecoins do end up lost or stolen then there's almost certainly nothing that can be done to get them back.**[^license]
+
+[^license]:
+    This work, "Dogecoin Wallets", is a derivative of "[Storing bitcoins](https://en.bitcoin.it/wiki/Storing_bitcoins)", used under [CC BY](https://creativecommons.org/licenses/by/3.0/).
+
+    "Dogecoin Wallets" is licensed under [CC BY](https://creativecommons.org/licenses/by/4.0/) by DogecoinIsAwesome.com
 
 [TOC]
 
 ## What Is A Dogecoin Wallet?
 
-A Dogecoin wallet can either be a software, service or gadget that saves your private and public keys and communicates with the blockchain. Your wallet's public key, that also serves as your "wallet address", can be viewed as the account number of your Dogecoin bank account. The private key of your wallet can be seen as the password for your Dogecoin bank account, which you can use to send Dogecoin from your wallet to another.
+A Dogecoin wallet can either be a software, service or gadget that saves your private and public keys and communicates with the blockchain. Your wallet's public key, that also serves as your "wallet address", can be viewed as the account number of your Dogecoin bank account. The private key of your wallet can be seen as the password for your Dogecoin bank account, which you can use to send Dogecoin from your wallet to another.[^1]
+
+[^1]: [https://anycoindirect.eu/en/wallets/litecoin](https://anycoindirect.eu/en/wallets/litecoin)
 
 ## What Is The Best Dogecoin Wallet?
 

@@ -1,6 +1,13 @@
 # Running A Dogecoin Full Node
 
-Support the Dogecoin network by running your own full node.
+Support the Dogecoin network by running your own full node.[^license]
+
+[^license]:
+    This work, "Running A Dogecoin Full Node", is a derivative of "[Running A Dogecoin Full Node](https://bitcoin.org/en/full-node)", used under MIT License (MIT) available on
+    [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
+
+    "Running A Dogecoin Full Node" is licensed under MIT License (MIT) available on
+    [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT) by DogecoinIsAwesome.com
 
 [TOC]
 
