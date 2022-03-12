@@ -855,7 +855,7 @@ Reducing the maximum connected nodes to a minimum could be desirable if traffic
 limits are tiny. Keep in mind that Dogecoin's trustless model works best if you are
 connected to a handful of nodes.
 
-#### Blocks-only Mode
+#### Blocks-Only Mode
 
     -blocksonly
 
