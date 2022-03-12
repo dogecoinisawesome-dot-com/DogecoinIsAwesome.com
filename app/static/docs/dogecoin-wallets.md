@@ -142,7 +142,3 @@ Physical Coins and other mechanism with a pre-manufactured key or seed are not a
 - Full node wallet: [Dogecoin Core](https://dogecoin.com/) is a full Dogecoin client and builds the backbone of the network. It offers high levels of security, privacy, and stability. However, it has fewer features and it takes a lot of space and memory.
 - Hardware wallets: [Ledger](https://shop.ledger.com/products/ledger-nano-s), [Trezor](https://shop.trezor.io/)
 - Light wallet: [MultiDoge](https://dogecoin.com/) syncs with the blockchain by "skimming" through the blockchain, providing fast sync times.
-
----
-
-This work, "Dogecoin Wallets", is a derivative of "[Storing bitcoins](https://en.bitcoin.it/wiki/Storing_bitcoins)", used under [CC BY](https://creativecommons.org/licenses/by/3.0/). "Dogecoin Wallets" is licensed under [CC BY](https://creativecommons.org/licenses/by/4.0/) by DogecoinIsAwesome.com
