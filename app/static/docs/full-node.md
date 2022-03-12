@@ -1,6 +1,13 @@
 # Running A Dogecoin Full Node
 
-Support the Dogecoin network by running your own full node.
+Support the Dogecoin network by running your own full node.[^license]
+
+[^license]:
+    This work, "Running A Dogecoin Full Node", is a derivative of "[Running A Dogecoin Full Node](https://bitcoin.org/en/full-node)", used under MIT License (MIT) available on
+    [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
+
+    "Running A Dogecoin Full Node" is licensed under MIT License (MIT) available on
+    [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT) by DogecoinIsAwesome.com
 
 [TOC]
 
@@ -869,11 +876,3 @@ won't see incoming transactions until they've received at least one confirmation
 
 You will still be able to send transactions from the built-in wallet or from
 peers you've whitelisted using the `-whitelist` parameter.
-
----
-
-# References
-
-This work, "Frequently Asked Questions", is a derivative of "[Frequently Asked Questions](https://bitcoin.org/en/full-node)", used under under MIT License (MIT) available on
-[https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT). "Frequently Asked Questions" is licensed under under MIT License (MIT) available on
-[https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT) by DogecoinIsAwesome.com
