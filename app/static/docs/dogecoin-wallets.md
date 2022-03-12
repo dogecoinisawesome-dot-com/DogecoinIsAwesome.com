@@ -138,4 +138,4 @@ Physical Coins and other mechanism with a pre-manufactured key or seed are not a
 
 ---
 
-This work, "Dogecoin Wallets", is a derivative of "[Storing bitcoins](https://en.bitcoin.it/wiki/Storing_bitcoins)", used under [CC BY](https://creativecommons.org/licenses/by/3.0/). "Dogecoin Wallets" is licensed under [CC BY](https://creativecommons.org/licenses/by/4.0/) by Jacek Trociński.
+This work, "Dogecoin Wallets", is a derivative of "[Storing bitcoins](https://en.bitcoin.it/wiki/Storing_bitcoins)", used under [CC BY](https://creativecommons.org/licenses/by/3.0/). "Dogecoin Wallets" is licensed under [CC BY](https://creativecommons.org/licenses/by/4.0/) by DogecoinIsAwesome.com
