@@ -869,3 +869,11 @@ won't see incoming transactions until they've received at least one confirmation
 
 You will still be able to send transactions from the built-in wallet or from
 peers you've whitelisted using the `-whitelist` parameter.
+
+---
+
+# References
+
+This work, "Frequently Asked Questions", is a derivative of "[Frequently Asked Questions](https://bitcoin.org/en/full-node)", used under under MIT License (MIT) available on
+[https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT). "Frequently Asked Questions" is licensed under under MIT License (MIT) available on
+[https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT) by DogecoinIsAwesome.com

@@ -138,7 +138,7 @@ Physical Coins and other mechanism with a pre-manufactured key or seed are not a
 
 ---
 
-#### References
+# References
 
 1. [https://anycoindirect.eu/en/wallets/litecoin](https://anycoindirect.eu/en/wallets/litecoin)
 

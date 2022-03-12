@@ -237,3 +237,11 @@ However, powerful miners could arbitrarily choose to block or reverse recent tra
 ### Is Dogecoin vulnerable to quantum computing?
 
 Yes, most systems relying on cryptography in general are, including traditional banking systems. However, quantum computers don't yet exist and probably won't for a while. In the event that quantum computing could be an imminent threat to Dogecoin, the protocol could be upgraded to use post-quantum algorithms. Given the importance that this update would have, it can be safely expected that it would be highly reviewed by developers and adopted by all Dogecoin users.
+
+---
+
+# References
+
+This work, "Frequently Asked Questions", is a derivative of "[Frequently Asked Questions](https://bitcoin.org/en/faq)", used under under MIT License (MIT) available on
+[https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT). "Frequently Asked Questions" is licensed under under MIT License (MIT) available on
+[https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT) by DogecoinIsAwesome.com
