@@ -839,7 +839,7 @@ Keep in mind that new nodes require other nodes that are willing to serve
 historic blocks. **The recommended minimum is 144 blocks per day (max. 144MiB
 per day)**
 
-#### Disable listening
+#### Disable Listening
 
     -listen=0
 
@@ -847,7 +847,7 @@ Disabling listening will result in fewer nodes connected (remember the maximum o
 outbound peers). Fewer nodes will result in less traffic usage as you are relaying
 blocks and transactions to fewer nodes.
 
-#### Reduce maximum connections
+#### Reduce Maximum Connections
 
     -maxconnections=<num>
 
@@ -855,7 +855,7 @@ Reducing the maximum connected nodes to a minimum could be desirable if traffic
 limits are tiny. Keep in mind that Dogecoin's trustless model works best if you are
 connected to a handful of nodes.
 
-#### Blocks-only mode
+#### Blocks-Only Mode
 
     -blocksonly
 
