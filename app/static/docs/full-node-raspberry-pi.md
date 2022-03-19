@@ -106,7 +106,9 @@ _Optional_: If you would like to have a prettier PuTTY console, follow the instr
 Once you're logged in to your Raspberry Pi, run:
 
 1.  `git clone https://github.com/billw2/rpi-clone.git`
+
 1.  `sudo cp rpi-clone rpi-clone-setup /usr/local/sbin`
+
 1.  `sudo rpi-clone sda`
 
         Booted disk: sdb 7.9GB Destination disk: sda 240.1GB
@@ -129,6 +131,7 @@ Once you're logged in to your Raspberry Pi, run:
         Optional destination ext type file system label (16 chars max): raspberry-pi
 
 1.  Once cloning is done, run `sudo shutdown -h now` and remove the USB stick from the Argone One case.
+
 1.  Power up the Argone One, the Raspberry Pi OS should now boot from the internal disk.
 
 ### Network Configuration
@@ -154,7 +157,9 @@ To configure a basic firewall, run:
     [^bitcoin_full_node_on_rbp3]: [https://medium.com/@meeDamian/bitcoin-full-node-on-rbp3-revised-88bb7c8ef1d1](https://medium.com/@meeDamian/bitcoin-full-node-on-rbp3-revised-88bb7c8ef1d1)
 
 1.  `sudo ufw limit ssh`
+
 1.  `sudo ufw allow from 192.168.1.0/24 to any port 22`
+
 1.  Allow Dogecoin traffic:
 
         # for mainnet …
@@ -170,3 +175,26 @@ To configure a basic firewall, run:
 Finally, we can install the software that will run our Dogecoin node.
 
 1.  Go to the [Dogecoin Releases](https://github.com/dogecoin/dogecoin/releases) page and download the latest ARM Linux release.
+
+    ![PuTTYgen](images/full-node-raspberry-pi/dogecoin-releases.png)
+
+        wget https://github.com/dogecoin/dogecoin/releases/download/v1.14.5/dogecoin-1.14.5-arm-linux-gnueabihf.tar.gz
+
+1.  `tar xzf dogecoin-1.14.5-arm-linux-gnueabihf.tar.gz`
+
+1.  `sudo install -m 0755 -o root -g root -t /usr/local/bin dogecoin-1.14.5/bin/*`
+
+1.  `dogecoind -daemon`
+
+1.  `cd ~/.dogecoin`
+
+1.  `wget https://github.com/dogecoin/dogecoin/blob/master/contrib/debian/examples/dogecoin.conf`
+
+1.  Add the following configuration to the `dogecoin.conf` file:
+
+        maxconnections=32
+        server=1
+        rpcuser=DogecoinIsAwesome
+        rpcpassword=A_SAFE_PASSWORD
+
+You're done! The Dogecoin node will take around two days to fully sync the entire blockchain.
