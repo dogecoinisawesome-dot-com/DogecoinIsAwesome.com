@@ -1,6 +1,7 @@
 # Dogecoin Full Node on a Raspberry Pi
 
 A Raspberry Pi is a great way to run a Dogecoin full node.
+
 In this guide, we’ll setup a headless (no GUI) Dogecoin full node to run on a Raspberry Pi 4.
 
 [TOC]
@@ -8,6 +9,7 @@ In this guide, we’ll setup a headless (no GUI) Dogecoin full node to run on a 
 ## Why Should I Run a Dogecoin Node?
 
 There is no monetary incentive for running a Dogecoin.
+
 However, there are still benefits to running a Dogecoin node such as:
 
 - Privacy and security; Transacting with the Dogecoin blockchain directly via a full node wallet, or using a wallet connected to a full node that you own, allows you to send and receive Dogecoin transactions in a trustless manner and avoids you having to go through third-party nodes.
@@ -45,6 +47,7 @@ While I generally recommend this custom setup, there were a few unfortunate issu
 ### Generate SSH Keys
 
 In order to connect to the Raspberry Pi securely via SSH, you will have to generate a public/private key pair.
+
 On a Windows computers:
 
 1. Download and install [PuTTY](https://www.putty.org/).
