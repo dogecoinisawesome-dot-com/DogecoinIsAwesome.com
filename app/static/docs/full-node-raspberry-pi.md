@@ -10,7 +10,7 @@ In this guide, we'll setup a headless (no GUI) Dogecoin full node to run on a Ra
 
 There is no monetary incentive for running a Dogecoin node.
 
-However, there are still benefits to running a Dogecoin node such as:
+However, there are still many benefits to running a Dogecoin node such as:
 
 - **Privacy and security**. You can transact with the Dogecoin blockchain directly via a full node wallet, or using a wallet connected to a full node that you own. This allows you to send and receive Dogecoin transactions in a trustless manner and avoids you having to go through third-party nodes.
 - **Education**. Learn Dogecoin development using the most secure Dogecoin interface, `dogecoind`.
