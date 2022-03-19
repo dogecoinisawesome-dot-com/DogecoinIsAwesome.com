@@ -135,7 +135,7 @@ Once you're logged in to your Raspberry Pi, run:
 
 In order to setup a Dogecoin node you may have to forward certain ports on your router.
 
-Following the steps outlined in [Running a Full Node](/full-node#enabling-connections) to get setup.
+Follow the steps outlined in the guide _[Running a Full Node](/full-node#enabling-connections)_ to get setup.
 
 #### Install Argon One Configuration
 
