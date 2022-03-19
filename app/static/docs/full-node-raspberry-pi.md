@@ -6,7 +6,7 @@ In this guide, we’ll setup a headless (no GUI) Dogecoin full node to run on a 
 
 [TOC]
 
-## Why Should I Run a Dogecoin Node?
+## Why Run a Dogecoin Node?
 
 There is no monetary incentive for running a Dogecoin.
 
