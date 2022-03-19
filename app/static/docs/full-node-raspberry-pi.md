@@ -20,7 +20,7 @@ However, there are still many benefits to running a Dogecoin node such as:
 
 ## Build a Custom Raspberry Pi
 
-Here is the custom Raspberry Pi we'll build to run a Dogecoin node:
+Here is the custom Raspberry Pi we'll build to run our Dogecoin node:
 
 ![Argon One M.2 Raspberry Pi 4 Case](images/full-node-raspberry-pi/argon40-case.jpg)
 
