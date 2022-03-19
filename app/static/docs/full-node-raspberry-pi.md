@@ -2,7 +2,7 @@
 
 A Raspberry Pi is a great way to run a Dogecoin full node.
 
-In this guide, we’ll setup a headless (no GUI) Dogecoin full node to run on a Raspberry Pi 4.
+In this guide, we'll setup a headless (no GUI) Dogecoin full node to run on a Raspberry Pi 4.
 
 [TOC]
 
@@ -12,13 +12,15 @@ There is no monetary incentive for running a Dogecoin node.
 
 However, there are still benefits to running a Dogecoin node such as:
 
-- Privacy and security; Transacting with the Dogecoin blockchain directly via a full node wallet, or using a wallet connected to a full node that you own, allows you to send and receive Dogecoin transactions in a trustless manner and avoids you having to go through third-party nodes.
-- Educational; Learn Dogecoin development using the most secure Dogecoin interface, `dogecoind`.
-- Support the network; Full nodes keep the Dogecoin blockchain decentralized, and protect the ecosystem from bad actors by reducing the need for trust.[^full_node_question]
+- **Privacy and security**. You can transact with the Dogecoin blockchain directly via a full node wallet, or using a wallet connected to a full node that you own. This allows you to send and receive Dogecoin transactions in a trustless manner and avoids you having to go through third-party nodes.
+- **Education**. Learn Dogecoin development using the most secure Dogecoin interface, `dogecoind`.
+- **Support the network**. Full nodes keep the Dogecoin blockchain decentralized, and protect the ecosystem from bad actors by reducing the need for trust.[^full_node_question]
 
 [^full_node_question]: [https://www.reddit.com/r/BitcoinBeginners/comments/3eq3y7/full_node_question/ctk4lnd/](https://www.reddit.com/r/BitcoinBeginners/comments/3eq3y7/full_node_question/ctk4lnd/)
 
 ## Build a Custom Raspberry Pi
+
+Here is a custom Raspberry Pi I built that runs my very own Dogecoin node:
 
 ![Argon One M.2 Raspberry Pi 4 Case](images/full-node-raspberry-pi/argon40-case.jpg)
 
@@ -43,6 +45,8 @@ While I generally recommend this custom setup, there were a few unfortunate issu
 - The female end of the SSD screw snapped in two when I tried to mount the SSD and I ended up having to tape the SSD down. Be gentle while screwing in the SSD!
 
 ## Raspberry Pi Setup
+
+At this point you should have assembled a custom Raspberry Pi, now it's time to get it running.
 
 ### Generate SSH Keys
 
