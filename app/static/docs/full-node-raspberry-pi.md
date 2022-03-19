@@ -81,6 +81,26 @@ On Windows:
 1.  Once the image is written to the USB stick eject it from your computer and plug it into the Argon One M.2 case.
 1.  Press the power button on the Argon One case, the Raspberry Pi OS should now boot from USB.
 
+#### Connect to the Raspberry Pi
+
+To connect to your Raspberry Pi via SSH:
+
+1.  Find the IP address of your Raspberry Pi. The easiest way to do this is to login to your router (e.g., [http://192.168.1.1/](http://192.168.1.1/)):
+    ![PuTTYgen](images/full-node-raspberry-pi/raspberry-pi-ip-address.png)
+1.  Launch PuTTY and configure the following settings:
+
+    - Enter the IP address into _Host Name (or IP address)_
+
+          ![PuTTYgen](images/full-node-raspberry-pi/putty-configuration.png)
+
+    - Go to _Connections_, _SSH_, _Auth_, and _Browse_ for the private key you created in PuTTYgen.
+
+1.  Go back to _Session_, click _Save_ and _Open_.
+1.  You will be prompted for a username, enter `pi`, and the password to your SSH key.
+1.  You should now be logged in.
+
+_Optional_: If you would like to have a prettier PuTTY console, follow the instructions for installing [Pretty PuTTY](https://github.com/jacektrocinski/pretty-putty).
+
 #### Clone the Raspberry Pi OS to the Internal SSD
 
 1.  `git clone https://github.com/billw2/rpi-clone.git`
