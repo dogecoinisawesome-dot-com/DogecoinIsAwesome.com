@@ -212,7 +212,7 @@ Finally, we can install the software that will run our Dogecoin node.
 
         cd ~/.dogecoin; wget https://github.com/dogecoin/dogecoin/blob/master/contrib/debian/examples/dogecoin.conf
 
-1.  Add the following configuration to the `dogecoin.conf` file:
+1.  Add the following configurations to the `dogecoin.conf` file:
 
         maxconnections=32
         server=1
