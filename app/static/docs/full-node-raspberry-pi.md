@@ -139,6 +139,6 @@ Follow the steps outlined in the guide _[Running a Full Node](/full-node#enablin
 
 #### Install Argon One Configuration
 
-Run the following command to install Argon One configurations needed to run the fan in the case:
+Run the following command to install the Argon One configurations needed to run the fan in the case:
 
     curl https://download.argon40.com/argon1.sh | bash
