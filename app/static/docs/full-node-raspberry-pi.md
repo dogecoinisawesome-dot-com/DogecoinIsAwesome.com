@@ -60,7 +60,7 @@ On Windows:
 1.  Click _Generate_.
 1.  Enter a _Key passphrase_.
 1.  Save the output in _Public key for pasting into OpenSSH authorized_keys file_, we'll use this in the next section.
-1.  Click _Save private key_ and save the private key in `ppk` format somewhere on your computer.
+1.  Click _Save private key_ and save the private key in `ppk` format on your computer.
 
     ![PuTTYgen](images/full-node-raspberry-pi/puttygen.png)
 
