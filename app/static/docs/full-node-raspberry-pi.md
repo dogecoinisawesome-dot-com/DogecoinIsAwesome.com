@@ -83,8 +83,11 @@ On Windows:
 
 To connect to your Raspberry Pi via SSH:
 
-1.  Find the IP address of your Raspberry Pi. The easiest way to do this is to login to your router (e.g., [http://192.168.1.1/](http://192.168.1.1/)):
+1.  Find the IP address of your Raspberry Pi.
+
+    The easiest way to do this is to login to your router (e.g., [http://192.168.1.1/](http://192.168.1.1/)):
     ![PuTTYgen](images/full-node-raspberry-pi/raspberry-pi-ip-address.png)
+
 1.  Launch PuTTY and configure the following settings:
 
     - Enter the IP address into _Host Name (or IP address)_
@@ -95,6 +98,7 @@ To connect to your Raspberry Pi via SSH:
     - Go back to _Session_, click _Save_ and _Open_.
 
 1.  You will be prompted for a username, enter `pi`, next enter the password for your SSH key.
+
 1.  You should now be logged in.
 
 _Optional_: If you would like to have a prettier PuTTY console, follow the instructions for installing [Pretty PuTTY](https://github.com/jacektrocinski/pretty-putty).
