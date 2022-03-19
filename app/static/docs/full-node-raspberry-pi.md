@@ -165,6 +165,8 @@ To configure a basic firewall, run:
 
 1.  `sudo ufw enable`
 
-## Install the Dogecoin Node
+## Dogecoin Node Installation
 
 Finally, we can install the software that will run our Dogecoin node.
+
+1.  Go to the [Dogecoin Releases](https://github.com/dogecoin/dogecoin/releases) page and download the latest ARM Linux release.
