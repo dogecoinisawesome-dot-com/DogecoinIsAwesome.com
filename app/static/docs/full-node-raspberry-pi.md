@@ -1,6 +1,4 @@
-# Dogecoin Full Node on a Raspberry Pi
-
-A great way to run a Dogecoin full node is to run it on a Raspberry Pi.
+# Running a Dogecoin Full Node on a Raspberry Pi
 
 In this guide, we'll setup a headless (no GUI) Dogecoin full node to run on a Raspberry Pi 4.
 
