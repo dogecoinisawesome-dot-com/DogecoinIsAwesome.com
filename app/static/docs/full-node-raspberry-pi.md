@@ -108,4 +108,4 @@ On Windows:
 
 1.  Once cloning is done, run `sudo shutdown -h now` and remove the USB stick from the Argone One case.
 
-Power up the Argone One, Raspberry Pi OS will now boot from the internal disk.
+Power up the Argone One, Raspberry Pi OS should now boot from the internal disk.
