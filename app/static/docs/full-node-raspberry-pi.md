@@ -8,7 +8,7 @@ In this guide, we’ll setup a headless (no GUI) Dogecoin full node to run on a 
 
 ## Why Run a Dogecoin Node?
 
-There is no monetary incentive for running a Dogecoin.
+There is no monetary incentive for running a Dogecoin node.
 
 However, there are still benefits to running a Dogecoin node such as:
 
