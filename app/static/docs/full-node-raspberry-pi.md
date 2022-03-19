@@ -103,6 +103,8 @@ _Optional_: If you would like to have a prettier PuTTY console, follow the instr
 
 #### Clone the Raspberry Pi OS to the Internal SSD
 
+Once logged in to you Raspberry Pi:
+
 1.  `git clone https://github.com/billw2/rpi-clone.git`
 1.  `sudo cp rpi-clone rpi-clone-setup /usr/local/sbin`
 1.  `sudo rpi-clone sda`
