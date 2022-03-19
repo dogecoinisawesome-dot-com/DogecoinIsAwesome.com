@@ -200,7 +200,7 @@ Finally, we can install the software that will run our Dogecoin node.
 
         tar xzf dogecoin-1.14.5-arm-linux-gnueabihf.tar.gz
 
-1.  Install Dogecoin node.
+1.  Install the Dogecoin node.
 
         sudo install -m 0755 -o root -g root -t /usr/local/bin dogecoin-1.14.5/bin/*
 
