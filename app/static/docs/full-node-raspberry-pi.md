@@ -138,9 +138,9 @@ Once you're logged in to your Raspberry Pi, run:
         Initialize and clone to the destination disk sda?  (yes/no): yes
         Optional destination ext type file system label (16 chars max): raspberry-pi
 
-1.  Once cloning is done, run `sudo shutdown -h now` and remove the USB stick from the Argone One case.
+1.  Once cloning is done, run `sudo shutdown -h now` and remove the USB stick from the Argon One case.
 
-1.  Power up the Argone One, the Raspberry Pi OS should now boot from the internal disk.
+1.  Power up Argon One, Raspberry Pi OS should now boot from the internal disk.
 
 ### Network Configuration
 
