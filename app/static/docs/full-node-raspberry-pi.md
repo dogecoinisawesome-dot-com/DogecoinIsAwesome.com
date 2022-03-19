@@ -107,11 +107,17 @@ _Optional_: If you would like to have a prettier PuTTY console, follow the instr
 
 Once you're logged in to your Raspberry Pi, run:
 
-1.  `git clone https://github.com/billw2/rpi-clone.git`
+1.  Pull down the `rpi-clone` repository.
 
-1.  `sudo cp rpi-clone rpi-clone-setup /usr/local/sbin`
+        git clone https://github.com/billw2/rpi-clone.git
 
-1.  `sudo rpi-clone sda`
+1.  Install `rpi-clone`.
+
+        sudo cp rpi-clone rpi-clone-setup /usr/local/sbin
+
+1.  Clone Raspberry Pi OS to the internal disk.
+
+        sudo rpi-clone sda
 
         Booted disk: sdb 7.9GB Destination disk: sda 240.1GB
         ---------------------------------------------------------------------------
@@ -152,15 +158,21 @@ Run the following command to install the Argon One configurations needed to run 
 
 To configure a basic firewall, run:
 
-1.  `sudo apt install ufw`
+1.  Install `ufw`.
+
+        sudo apt install ufw
 
     **Note**: `ufw` default rules allow for all outgoing connections, but block all incoming connections.[^bitcoin_full_node_on_rbp3]
 
     [^bitcoin_full_node_on_rbp3]: [https://medium.com/@meeDamian/bitcoin-full-node-on-rbp3-revised-88bb7c8ef1d1](https://medium.com/@meeDamian/bitcoin-full-node-on-rbp3-revised-88bb7c8ef1d1)
 
-1.  `sudo ufw limit ssh`
+1.  Limit SSH access.
 
-1.  `sudo ufw allow from 192.168.1.0/24 to any port 22`
+        sudo ufw limit ssh
+
+1.  Allow SSH access from the internal network.
+
+        sudo ufw allow from 192.168.1.0/24 to any port 22
 
 1.  Allow Dogecoin traffic:
 
@@ -170,7 +182,9 @@ To configure a basic firewall, run:
         # … or, for testnet
         sudo ufw allow 44556 comment "Dogecoin testnet"
 
-1.  `sudo ufw enable`
+1.  Apply the settings.
+
+        sudo ufw enable
 
 ## Dogecoin Node Installation
 
@@ -182,15 +196,21 @@ Finally, we can install the software that will run our Dogecoin node.
 
         wget https://github.com/dogecoin/dogecoin/releases/download/v1.14.5/dogecoin-1.14.5-arm-linux-gnueabihf.tar.gz
 
-1.  `tar xzf dogecoin-1.14.5-arm-linux-gnueabihf.tar.gz`
+1.  Unpack the file contents.
 
-1.  `sudo install -m 0755 -o root -g root -t /usr/local/bin dogecoin-1.14.5/bin/*`
+        tar xzf dogecoin-1.14.5-arm-linux-gnueabihf.tar.gz
 
-1.  `dogecoind -daemon`
+1.  Install Dogecoin node.
 
-1.  `cd ~/.dogecoin`
+        sudo install -m 0755 -o root -g root -t /usr/local/bin dogecoin-1.14.5/bin/*
 
-1.  `wget https://github.com/dogecoin/dogecoin/blob/master/contrib/debian/examples/dogecoin.conf`
+1.  Start up the Dogecoin node.
+
+        dogecoind -daemon
+
+1.  Download an example Dogecoin configuration file.
+
+        cd ~/.dogecoin; wget https://github.com/dogecoin/dogecoin/blob/master/contrib/debian/examples/dogecoin.conf
 
 1.  Add the following configuration to the `dogecoin.conf` file:
 
