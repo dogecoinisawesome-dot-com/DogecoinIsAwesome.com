@@ -133,7 +133,7 @@ Once you're logged in to your Raspberry Pi, run:
 
 ### Configure Networking
 
-In order to setup a Dogecoin node you may have to forward certain ports on your router.
+In order to setup a Dogecoin node you may have to forward certain ports in your router.
 
 Follow the steps outlined in the guide _[Running a Full Node](/full-node#enabling-connections)_ to get setup.
 
