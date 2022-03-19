@@ -62,7 +62,9 @@ On Windows:
 
 ### Install Raspberry Pi OS
 
-1.  Download the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) and plugin a USB stick to your computer.
+#### Write Raspberry Pi OS to USB Stick
+
+1.  Download the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) and plug in a USB stick to your computer.
 1.  Click on _Choose Storage_ and select the USB stick.
 1.  Click on _Choose OS_, go to _Raspberry Pi OS (Other)_ and select _Raspberry OS Lite (32-bit)_.
 1.  Click on the _Advanced Options_ icon and configure the following settings:
@@ -72,3 +74,34 @@ On Windows:
     - Optionally, disable telemetry, select locale, and configure WiFi credentials.
       ![PuTTYgen](images/full-node-raspberry-pi/raspberry-pi-imager-options.png)
 1.  Click on _WRITE_.
+1.  Once the image is written to the USB stick, eject it from your computer and plug it into the Argon One M.2 case.
+1.  Press the power button on the Argon One case, Raspberry Pi OS will boot from the USB stick.
+
+#### Clone Raspberry Pi OS to Internal SSD
+
+1.  `git clone https://github.com/billw2/rpi-clone.git`
+1.  `sudo cp rpi-clone rpi-clone-setup /usr/local/sbin`
+1.  `sudo rpi-clone sda`
+
+        Booted disk: sdb 7.9GB Destination disk: sda 240.1GB
+        ---------------------------------------------------------------------------
+        Part Size FS Label Part Size FS Label
+        1 /boot 256.0M fat32 --
+        2 root 7.1G ext4 rootfs
+        ---------------------------------------------------------------------------
+        == Initialize: IMAGE partition table - partition number mismatch: 2 -> 0 ==
+        1 /boot (48.0M used) : MKFS SYNC to sda1
+        2 root (1.4G used) : RESIZE MKFS SYNC to sda2
+        ---------------------------------------------------------------------------
+        Run setup script : no.
+        Verbose mode : no.
+        -----------------------:
+        ** WARNING ** : All destination disk sda data will be overwritten!
+        -----------------------:
+
+        Initialize and clone to the destination disk sda?  (yes/no): yes
+        Optional destination ext type file system label (16 chars max): raspberry-pi
+
+1.  Once done, run `sudo shutdown -h now` and remove the USB stick from the Argone One case.
+
+Power up the Argone One, Raspberry Pi OS will now boot from internal disk.
