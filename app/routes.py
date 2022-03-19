@@ -84,3 +84,24 @@ def full_node():
         )
     except IndexError:
         abort(404)
+
+
+@app.route("/full-node-raspberry-pi")
+def full_node_raspberry_pi():
+    try:
+        readme_file = open("./app/static/docs/full-node-raspberry-pi.md", "r")
+        md_template_string = markdown.markdown(
+            readme_file.read(),
+            extensions=[
+                "markdown.extensions.fenced_code",
+                "markdown.extensions.toc",
+                "markdown.extensions.footnotes",
+            ],
+        )
+        return render_template(
+            "content.html",
+            title="Running a Full Node on a Raspberry Pi",
+            markdown_html=md_template_string,
+        )
+    except IndexError:
+        abort(404)
