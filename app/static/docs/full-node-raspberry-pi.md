@@ -37,7 +37,7 @@ Instructions on how to mount the parts can be found on [YouTube](https://youtu.b
 
 ### Issues
 
-Here are a few issues I ran into with this setup:
+There are a few issues I ran into with this setup:
 
 - The case took over a month and a half to arrive from China and upon arrival I had to pay a customs fee. I purchased the case through the official website.
 - The female end of the SSD screw snapped in two when I tried to mount the SSD and I ended up having to tape the SSD down. Be gentle while screwing in the SSD!
