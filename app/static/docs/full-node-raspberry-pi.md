@@ -79,7 +79,7 @@ On Windows:
       ![PuTTYgen](images/full-node-raspberry-pi/raspberry-pi-imager-options.png)
 1.  Click on _SAVE_ and then _WRITE_.
 1.  Once the image is written to the USB stick eject it from your computer and plug it into the Argon One M.2 case.
-1.  Press the power button on the Argon One case, Raspberry Pi OS should now boot from USB.
+1.  Press the power button on the Argon One case, the Raspberry Pi OS should now boot from USB.
 
 #### Clone the Raspberry Pi OS to the Internal SSD
 
@@ -108,4 +108,4 @@ On Windows:
 
 1.  Once cloning is done, run `sudo shutdown -h now` and remove the USB stick from the Argone One case.
 
-Power up the Argone One, Raspberry Pi OS should now boot from the internal disk.
+Power up the Argone One, the Raspberry Pi OS should now boot from the internal disk.
