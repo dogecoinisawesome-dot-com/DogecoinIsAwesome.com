@@ -66,7 +66,7 @@ On Windows:
 
 ### Install Raspberry Pi OS
 
-#### Write Raspberry Pi OS to a USB Stick
+#### Write the Raspberry Pi OS to a USB Stick
 
 1.  Download the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) and plug in a USB stick to your computer.
 1.  Click on _Choose Storage_ and select the USB stick.
@@ -81,7 +81,7 @@ On Windows:
 1.  Once the image is written to the USB stick eject it from your computer and plug it into the Argon One M.2 case.
 1.  Press the power button on the Argon One case, Raspberry Pi OS should now boot from USB.
 
-#### Clone Raspberry Pi OS to Internal SSD
+#### Clone the Raspberry Pi OS to the Internal SSD
 
 1.  `git clone https://github.com/billw2/rpi-clone.git`
 1.  `sudo cp rpi-clone rpi-clone-setup /usr/local/sbin`
