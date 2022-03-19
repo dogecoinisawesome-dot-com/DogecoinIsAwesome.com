@@ -96,7 +96,7 @@ To connect to your Raspberry Pi via SSH:
     - Go to _Connections_, _SSH_, _Auth_, and _Browse_ for the private key you created in PuTTYgen.
     - Go back to _Session_, click _Save_ and _Open_.
 
-1.  You will be prompted for a username, enter `pi`, then enter the password to your SSH key.
+1.  You will be prompted for a username, enter `pi`, next enter the password for your SSH key.
 1.  You should now be logged in.
 
 _Optional_: If you would like to have a prettier PuTTY console, follow the instructions for installing [Pretty PuTTY](https://github.com/jacektrocinski/pretty-putty).
