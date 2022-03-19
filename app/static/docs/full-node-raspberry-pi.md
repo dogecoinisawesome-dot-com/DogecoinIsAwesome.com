@@ -142,3 +142,29 @@ Follow the steps outlined in the guide _[Running a Full Node](/full-node#enablin
 Run the following command to install the Argon One configurations needed to run the fan inside the case:
 
     curl https://download.argon40.com/argon1.sh | bash
+
+### Configure UFW Firewall
+
+To configure a basic firewall for extra security, run:
+
+1.  `sudo apt install ufw`
+
+    **Note**: `ufw` default rules allow for all outgoing connections, but block all incoming connections.[^bitcoin_full_node_on_rbp3]
+
+    [^bitcoin_full_node_on_rbp3]: [https://medium.com/@meeDamian/bitcoin-full-node-on-rbp3-revised-88bb7c8ef1d1](https://medium.com/@meeDamian/bitcoin-full-node-on-rbp3-revised-88bb7c8ef1d1)
+
+1.  `sudo ufw limit ssh`
+1.  `sudo ufw allow from 192.168.1.0/24 to any port 22`
+1.  Allow Dogecoin traffic:
+
+        # for mainnet …
+        sudo ufw allow 22556 comment "Dogecoin mainnet"
+
+        # … or, for testnet
+        sudo ufw allow 44556 comment "Dogecoin testnet"
+
+1.  `sudo ufw enable`
+
+## Install the Dogecoin Node
+
+Finally, we can install the software that will run our Dogecoin node.
