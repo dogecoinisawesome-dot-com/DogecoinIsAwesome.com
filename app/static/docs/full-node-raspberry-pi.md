@@ -131,21 +131,21 @@ Once you're logged in to your Raspberry Pi, run:
 1.  Once cloning is done, run `sudo shutdown -h now` and remove the USB stick from the Argone One case.
 1.  Power up the Argone One, the Raspberry Pi OS should now boot from the internal disk.
 
-### Configure Networking
+### Network Configuration
 
 In order to setup a Dogecoin node you may have to forward certain ports in your router.
 
 Follow the steps outlined in the guide _[Running a Full Node](/full-node#enabling-connections)_ to get setup.
 
-### Install Argon One Configuration
+### Argon One Configuration
 
 Run the following command to install the Argon One configurations needed to run the fan inside the case:
 
     curl https://download.argon40.com/argon1.sh | bash
 
-### Configure UFW Firewall
+### UFW Configuration
 
-To configure a basic firewall for extra security, run:
+To configure a basic firewall, run:
 
 1.  `sudo apt install ufw`
 

@@ -9,6 +9,7 @@ pre {
 
 pre {
   overflow-x: auto;
+  padding: 8px;
 }
 
 .toc ul,
