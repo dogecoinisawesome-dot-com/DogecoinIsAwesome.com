@@ -48,19 +48,27 @@ While I generally recommend this custom setup, there were a few unfortunate issu
 
 In order to connect to the Raspberry Pi securely via SSH, you will have to generate a public/private key pair.
 
-On a Windows computers:
+On Windows:
 
-1. Download and install [PuTTY](https://www.putty.org/).
-1. Launch PuTTYgen.
-1. ![PuTTYgen](images/full-node-raspberry-pi/puttygen.png)
-1. Select the option _EdDSA_.
-1. Click _Generate_.
-1. Enter a _Key passphrase_.
-1. Save the output in _Public key for pasting into OpenSSH authorized_keys file_, we'll use this in the next section.
-1. Click _Save private key_ and save the private key in `ppk` format somewhere on your computer.
+1.  Download and install [PuTTY](https://www.putty.org/).
+1.  Launch PuTTYgen.
+1.  Select the option _EdDSA_.
+1.  Click _Generate_.
+1.  Enter a _Key passphrase_.
+1.  Save the output in _Public key for pasting into OpenSSH authorized_keys file_, we'll use this in the next section.
+1.  Click _Save private key_ and save the private key in `ppk` format somewhere on your computer.
+
+    ![PuTTYgen](images/full-node-raspberry-pi/puttygen.png)
 
 ### Install Raspberry Pi OS
 
-1. Download the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) and plugin a USB stick to your computer.
-1. Click on _Choose Storage_ and select the USB stick.
-1. Click on _Choose OS_, go to _Raspberry Pi OS (Other)_ and select _Raspberry OS Lite (32-bit)_.
+1.  Download the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) and plugin a USB stick to your computer.
+1.  Click on _Choose Storage_ and select the USB stick.
+1.  Click on _Choose OS_, go to _Raspberry Pi OS (Other)_ and select _Raspberry OS Lite (32-bit)_.
+1.  Click on the _Advanced Options_ icon and configure the following settings:
+    - Set _Image customization options_ to _always use_.
+    - Set _Enable SSH_, _Allow public-key authentication only_, and paste the public key generated in PuTTYgen into _Set authorized keys for 'pi'_.
+    - Set a password for the `pi` user.
+    - Optionally, disable telemetry, select locale, and configure WiFi credentials.
+      ![PuTTYgen](images/full-node-raspberry-pi/raspberry-pi-imager-options.png)
+1.  Click on _WRITE_.
