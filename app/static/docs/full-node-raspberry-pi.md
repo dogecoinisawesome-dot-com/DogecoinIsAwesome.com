@@ -156,7 +156,7 @@ Run the following command to install the Argon One configurations needed to run 
 
 ### UFW Configuration
 
-To configure a basic firewall, run:
+To configure a basic firewall:
 
 1.  Install `ufw`.
 
