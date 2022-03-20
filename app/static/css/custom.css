@@ -1,10 +1,13 @@
 code,
 pre {
   font-size: 16px;
-  padding: 6px;
   box-sizing: border-box;
   line-height: 1.4;
   background-color: #f6f8fa;
+}
+
+code {
+  padding: 2px;
 }
 
 pre {
