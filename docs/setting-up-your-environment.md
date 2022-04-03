@@ -31,7 +31,7 @@ And install the necessary dependencies using `pip`:
 
 1.  To start the application, run the following command:
 
-        docker-compose -f docker-compose.dev.yml up --build
+        docker compose -f docker-compose.dev.yml up --build
 
 1.  To preview the website in your local browser, go to: [http://localhost:5000/](http://localhost:5000/)
 
