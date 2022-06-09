@@ -14,7 +14,7 @@ extra work.
 
 ### **Create A Python Virtual Environment**
 
-Make sure you have Python 3.10.2 installed locally and check out the site repository.
+Make sure you have Python 3.10.4 installed locally and check out the site repository.
 
 To create a Python virtual environment, simply run this command in the top-level
 directory of your local repository:
