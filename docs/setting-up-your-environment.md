@@ -3,7 +3,7 @@
 ## **Build The Site Locally**
 
 DogecoinIsAwesome.com is created using [Python
-Flask](https://flask.palletsprojects.com/en/1.1.x/).
+Flask](https://flask.palletsprojects.com/en/2.1.x/).
 
 To build the site, you
 need to go through a one-time installation procedure that takes 5 to 10
