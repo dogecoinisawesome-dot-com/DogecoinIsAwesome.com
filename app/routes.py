@@ -37,7 +37,8 @@ def wallets():
         )
         return render_template(
             "content.html",
-            title="Which wallet is best for Dogecoin?",
+            title="Choose a Dogecoin Wallet",
+            description="Once you own Dogecoin, storing it safely and securely is important. Learn more about the recommended wallets and storage solutions.",
             markdown_html=md_template_string,
         )
     except IndexError:
@@ -58,7 +59,8 @@ def faq():
         )
         return render_template(
             "content.html",
-            title="Frequently Asked Questions and Myths About Dogecoin",
+            title="Frequently Asked Questions",
+            description="To learn more about Dogecoin, take a look at our FAQs.",
             markdown_html=md_template_string,
         )
     except IndexError:
@@ -79,7 +81,8 @@ def full_node():
         )
         return render_template(
             "content.html",
-            title="Running a Full Node",
+            title="Running A Dogecoin Full Node",
+            description="Support the Dogecoin network by running your own full node.",
             markdown_html=md_template_string,
         )
     except IndexError:
@@ -100,7 +103,8 @@ def full_node_raspberry_pi():
         )
         return render_template(
             "content.html",
-            title="Running a Full Node on a Raspberry Pi",
+            title="Raspberry Pi Full Node Setup",
+            description="Run a Dogecoin full node on a Raspberry Pi.",
             markdown_html=md_template_string,
         )
     except IndexError:
