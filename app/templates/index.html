@@ -1,55 +1,71 @@
-{% extends "base.html" %}
-
-{% block content %}
-<section id="call-to-action" class="call-to-action">
-  <div class="centered-container w-container">
-    <h1 class="heading">Dogecoin is an innovative payment network and a new kind of money.</h1><img
-      src="images/doge_1.png" loading="lazy" sizes="(max-width: 479px) 85vw, (max-width: 654px) 88vw, 576px"
-      srcset="images/doge_1-p-500.png 500w, images/doge_1.png 576w" alt="Doge">
-    <h2 class="heading-4">Find answers to recurring questions and myths about Dogecoin.</h2>
-    <a href="/faq" class="button-hero w-button">Frequently Asked Questions</a>
-  </div>
-</section>
-<main id="main-content" class="main-content">
-  <div class="w-container">
-    <div class="w-richtext">
-      <h1>Why is Dogecoin Awesome?</h1>
-      <p>Dogecoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and
-        the issuing of Dogecoins is carried out collectively by the network. <strong>Dogecoin is open-source; its design
-          is public, nobody owns or controls Dogecoin and everyone can take part</strong>. Through many of its unique
-        properties, Dogecoin allows exciting uses that could not be covered by any previous payment system.</p>
-      <p>‍</p>
-      <h2>A Little History</h2>
-      <p>The first few weeks after Dogecoin was released were incredible, it went from a being a silly joke to something
-        worth something to people and a community was developing fast, with lots of people putting up services and
-        infrastructure around it.</p>
-      <p>One of those things was an online wallet - instead of having to download the clunky and slow main client
-        someone had provided a service to hold people&#x27;s Dogecoin for them. Online wallets have a history of being
-        sketchy, and sure enough, on Christmas, the wallet was hacked, and 21 million Dogecoins were stolen in the
-        process.</p>
-      <p>This type of story was all too common in the cryptocurrency world, but what happened next was not. Some members
-        of the community got together and started a Dogecoin fund to &quot;Save Dogemas&quot; - to try to return money
-        to those who had lost it. The Dogecoin community donated millions of coins to help those who had been victims of
-        the bad actor - and that spirit didn&#x27;t stop, the community would donate Dogecoins for both good causes,
-        such as helping build water wells in Africa, helping connect service dogs and kids, and silly and amusing
-        causes, such as helping send the Jamaican Bobsled team to the Olympics, or sponsoring a Nascar driver.</p>
-      <figure style="max-width:px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-        <div><img src="images/dogecoin-nascar.jpg" loading="lazy" alt="Dogecoin Nascar"></div>
-      </figure>
-      <p>‍</p>
-      <h2>How do you Pronounce Dogecoin?</h2>
-      <p>According to the cryptocurrency&#x27;s co-founder, Billy Markus, the correct pronunciation is &quot;dohj
-        coin.&quot;</p>
-      <figure style="padding-bottom:33.723653395784545%" class="w-richtext-align-center w-richtext-figure-type-video">
-        <div><iframe allowfullscreen="true" frameborder="0" scrolling="no"
-            src="https://www.youtube.com/embed/kVDcOI0-gdQ"></iframe></div>
-      </figure>
-      <p>‍</p>
-      <h2>What’s the True Value of Dogecoin?</h2>
-      <p>Joy, kindness, learning, giving, empathy, fun, community, inspiration, creativity, generosity, silliness,
-        absurdity. These are the things that make Dogecoin what it is and when the community embodies these things,
-        that&#x27;s True Value.</p>
+{% extends "base.html" %} {% block content %}
+<div class="header-inner cc-header-extra wf-section">
+  <div class="container">
+    <div class="header-inner-content">
+      <h1 class="h1">Learn about Dogecoin.</h1>
+      <p class="paragraph">
+        We are a non-profit site whose mission is to advance Dogecoin for the
+        good of society through education.
+      </p>
     </div>
   </div>
-</main>
+</div>
+<div class="features wf-section">
+  <div class="container">
+    <div class="h2-container">
+      <h2 class="h2">
+        <span class="text-span">Get Started. </span>Dogecoin is a new kind of
+        money powered by its users with no central authority or middlemen. From
+        a user perspective, Dogecoin is pretty much like cash for the Internet.
+      </h2>
+    </div>
+    <div class="container cc-center"></div>
+    <div class="collection-list-wrapper cc-feature-row">
+      <div class="collection-list cc-feature-row">
+        <div class="collection-item cc-feature-row">
+          <a href="/dogecoin-wallets" class="link-block w-inline-block">
+            <div class="feature-item-container">
+              <div class="feature-icon">
+                <img src="images/wallet-svgrepo-com.svg" alt="Wallet" />
+              </div>
+              <h3 class="h3">Choose a Wallet</h3>
+              <p class="paragraph cc-gray">
+                Once you own Dogecoin, storing it safely and securely is
+                important. Click to learn more about the recommended wallets and
+                storage solutions.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="collection-item cc-feature-row">
+          <a href="/faq" class="link-block w-inline-block">
+            <div class="feature-item-container">
+              <div class="feature-icon">
+                <img src="images/faq-button-svgrepo-com.svg" alt="FAQ" />
+              </div>
+              <h3 class="h3">FAQ</h3>
+              <p class="paragraph cc-gray">
+                To learn more about Dogecoin, take a look at our FAQs.<br />
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="collection-item cc-feature-row">
+          <a href="/full-node" class="link-block w-inline-block">
+            <div class="feature-item-container">
+              <div class="feature-icon">
+                <img src="images/server-svgrepo-com.svg" alt="Server" />
+              </div>
+              <h3 class="h3">Running a Full Node</h3>
+              <p class="paragraph cc-gray">
+                Help the Dogecoin network by volunteering to run a full node
+                using spare computing and bandwidth resources.<br />
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
