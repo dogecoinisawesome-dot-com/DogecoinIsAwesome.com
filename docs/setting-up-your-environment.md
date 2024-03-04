@@ -36,3 +36,9 @@ And install the necessary dependencies using `pip`:
 1.  To preview the website in your local browser, go to: [http://localhost:5000/](http://localhost:5000/)
 
 1.  Press ctrl-c to stop the container.
+
+## **Build The Site For Production**
+
+Build the site for production architecture:
+
+    docker buildx build --platform linux/amd64 -t dogecoinisawesomecom-web:latest .
