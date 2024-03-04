@@ -672,11 +672,27 @@ by operating system:
   Replace all the dashes with colons, so the address looks like this:
   01:23:45:67:89:AB. Use that address in the instructions below.
 
-- **Linux:** open a terminal and type `ifconfig`. Find the result that
-  best matches your connection---a result starting with `wlan` indicates
-  a wireless connection. Find the field that starts with `HWaddr` and copy
-  the immediately following field that looks like 01:23:45:67:89:ab. Use
-  that value in the instructions below.
+- **Linux:** open a terminal and type `ifconfig`. If you get a message
+  saying "command not found" or similar, you'll need to install `net-tools`
+  using the following commands:
+
+  For Debian/Ubuntu:
+  ```
+  sudo apt update
+  sudo apt install net-tools
+  ```
+  For Fedora, CentOS, or RHEL
+  ```
+  sudo dnf update
+  sudo dnf install net-tools
+  ```
+
+  Once net-tools is installed, type `ifconfig` in your terminal and
+  press enter. Find the result that best matches your connection---a
+  result starting with `wlan` indicates a wireless connection. Find
+  the field that starts with `HWaddr` and copy the immediately following
+  field that looks like 01:23:45:67:89:ab. Use that value in the
+  instructions below.
 
 - **Mac OS X:** open a terminal and type `ifconfig`. Find the result
   that best matches your connection---a result starting with `en1`
