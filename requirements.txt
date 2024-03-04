@@ -1,5 +1,5 @@
-black==23.3.0
-Flask==2.3.2
-Markdown==3.4.3
-pip==23.1.2
-setuptools==67.7.2
+black==24.2.0
+Flask==3.0.2
+Markdown==3.5.2
+pip==24.0
+setuptools==69.1.1
